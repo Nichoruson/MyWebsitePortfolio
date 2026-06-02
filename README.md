@@ -10,7 +10,7 @@ Open `index.html` in your browser, or use a simple local server:
 npx serve .
 ```
 
-Add your profile photo as `photo.jpg` in this folder.
+Profile photo lives at `assets/photo.jpg` and is used in the hero, about, contact, and site icon.
 
 ## Deploy
 

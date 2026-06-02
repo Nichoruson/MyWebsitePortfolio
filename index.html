@@ -11,6 +11,15 @@
       name="description"
       content="Portfolio of Rue Martine Nicholson A. Abando — web developer, projects, and skills."
     />
+    <meta property="og:title" content="Rue Abando | Portfolio" />
+    <meta
+      property="og:description"
+      content="Web developer portfolio — projects, skills, and contact."
+    />
+    <meta property="og:image" content="./assets/photo.jpg" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="./assets/photo.jpg" type="image/jpeg" />
+    <link rel="apple-touch-icon" href="./assets/photo.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,7 +34,15 @@
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="#top" aria-label="Go to top">
-          <span class="brand-mark" aria-hidden="true">R</span>
+          <span class="brand-mark">
+            <img
+              src="./assets/photo.jpg"
+              alt=""
+              width="36"
+              height="36"
+              decoding="async"
+            />
+          </span>
           <span class="brand-text">Rue Abando</span>
         </a>
 
@@ -91,11 +108,13 @@
             <div class="hero-glow" aria-hidden="true"></div>
             <div class="hero-photo">
               <img
-                src="./photo.jpg"
+                src="./assets/photo.jpg"
                 alt="Rue Martine Nicholson A. Abando"
                 width="220"
                 height="220"
                 loading="eager"
+                fetchpriority="high"
+                decoding="async"
               />
             </div>
             <div class="hero-stats" aria-hidden="true">
@@ -120,12 +139,25 @@
           </header>
 
           <div class="about-grid">
-            <div class="card about-highlight reveal">
-              <p>
-                I’m a web developer who enjoys turning ideas into polished,
-                accessible products — from interactive maps to referral systems
-                with real users in mind.
-              </p>
+            <div class="card about-profile reveal">
+              <div class="about-photo">
+                <img
+                  src="./assets/photo.jpg"
+                  alt="Rue Martine Nicholson A. Abando"
+                  width="120"
+                  height="120"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="about-profile-copy">
+                <h3>Rue Martine Nicholson A. Abando</h3>
+                <p>
+                  I’m a web developer who enjoys turning ideas into polished,
+                  accessible products — from interactive maps to referral
+                  systems with real users in mind.
+                </p>
+              </div>
             </div>
 
             <div class="card reveal" style="--delay: 80ms">
@@ -372,6 +404,16 @@
           </header>
 
           <div class="card contact-panel reveal">
+            <div class="contact-photo">
+              <img
+                src="./assets/photo.jpg"
+                alt=""
+                width="72"
+                height="72"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
             <h3>Rue Martine Nicholson A. Abando</h3>
             <p class="muted">Open to opportunities, collaborations, and questions.</p>
             <div class="contact-actions">

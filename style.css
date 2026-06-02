@@ -160,14 +160,23 @@ a:focus-visible,
   width: 36px;
   height: 36px;
   border-radius: 12px;
-  background: var(--gradient-soft);
+  padding: 2px;
+  background: var(--gradient);
   border: 1px solid var(--border-strong);
   display: grid;
   place-items: center;
-  font-size: 14px;
-  font-weight: 800;
-  color: var(--accent);
+  overflow: hidden;
+  flex-shrink: 0;
   box-shadow: var(--shadow-glow);
+}
+
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 9px;
+  object-fit: cover;
+  object-position: center 18%;
 }
 
 .nav {
@@ -483,13 +492,19 @@ body.nav-open {
     0 0 80px rgba(62, 232, 197, 0.15);
 }
 
-.hero-photo img {
+.hero-photo img,
+.about-photo img,
+.contact-photo img {
   width: 100%;
   height: 100%;
   display: block;
-  border-radius: 50%;
   object-fit: cover;
+  object-position: center 18%;
   background: var(--bg-elevated);
+}
+
+.hero-photo img {
+  border-radius: 50%;
 }
 
 .hero-stats {
@@ -580,17 +595,41 @@ body.nav-open {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.about-highlight {
+.about-profile {
   grid-column: 1 / -1;
-  padding: 32px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 28px;
   background: var(--gradient-soft);
   border-color: rgba(62, 232, 197, 0.2);
 }
 
-.about-highlight p {
+.about-photo {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  padding: 4px;
+  border-radius: 50%;
+  background: var(--gradient);
+  box-shadow: var(--shadow-md);
+}
+
+.about-photo img {
+  border-radius: 50%;
+}
+
+.about-profile-copy h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
+}
+
+.about-profile-copy p {
+  margin: 0;
   font-size: 1.05rem;
   color: rgba(244, 247, 255, 0.85);
-  margin: 0;
+  line-height: 1.65;
   max-width: 65ch;
 }
 
@@ -842,6 +881,20 @@ body.nav-open {
   margin: 0 auto;
   text-align: center;
   padding: 40px 32px;
+}
+
+.contact-photo {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 16px;
+  padding: 3px;
+  border-radius: 50%;
+  background: var(--gradient);
+  box-shadow: var(--shadow-sm);
+}
+
+.contact-photo img {
+  border-radius: 50%;
 }
 
 .contact-panel h3 {
@@ -1144,8 +1197,14 @@ body.nav-open {
     padding: 22px;
   }
 
-  .about-highlight {
+  .about-profile {
+    flex-direction: column;
+    text-align: center;
     padding: 24px;
+  }
+
+  .about-profile-copy p {
+    max-width: none;
   }
 
   .project-body {
