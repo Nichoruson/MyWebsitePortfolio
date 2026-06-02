@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
     <title>Rue Abando | Portfolio</title>
     <meta
       name="description"
@@ -26,11 +29,23 @@
           <span class="brand-text">Rue Abando</span>
         </a>
 
-        <nav class="nav" aria-label="Primary">
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+
+        <nav class="nav" id="site-nav" aria-label="Primary">
           <a href="#about">About</a>
           <a href="#tools">Skills</a>
           <a href="#projects">Projects</a>
-          <a class="btn btn-sm" href="#contact">Contact</a>
+          <a class="btn btn-sm nav-contact" href="#contact">Contact</a>
         </nav>
       </div>
     </header>
@@ -387,6 +402,32 @@
     <script>
       document.getElementById("year").textContent = String(
         new Date().getFullYear()
+      );
+
+      const nav = document.getElementById("site-nav");
+      const navToggle = document.querySelector(".nav-toggle");
+
+      function setMenuOpen(open) {
+        nav.classList.toggle("is-open", open);
+        navToggle.setAttribute("aria-expanded", String(open));
+        navToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+        document.body.classList.toggle("nav-open", open);
+      }
+
+      navToggle.addEventListener("click", () => {
+        setMenuOpen(!nav.classList.contains("is-open"));
+      });
+
+      nav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => setMenuOpen(false));
+      });
+
+      window.addEventListener(
+        "resize",
+        () => {
+          if (window.innerWidth > 768) setMenuOpen(false);
+        },
+        { passive: true }
       );
 
       const prefersReduced =
