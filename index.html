@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rue Abando | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Rue Martine Nicholson A. Abando — web developer, projects, and skills."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Go to top">
+          <span class="brand-mark" aria-hidden="true">R</span>
+          <span class="brand-text">Rue Abando</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#tools">Skills</a>
+          <a href="#projects">Projects</a>
+          <a class="btn btn-sm" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Web Developer</p>
+            <h1>
+              Building thoughtful web experiences
+              <span class="accent">that feel fast, clear, and alive.</span>
+            </h1>
+            <p class="lead">
+              Hi, I’m <strong>Rue Martine Nicholson A. Abando</strong> — I
+              design and build modern interfaces, from maps and dashboards
+              to full-stack apps with clean UI and solid structure.
+            </p>
+
+            <div class="hero-cta">
+              <a class="btn" href="#projects">See my work</a>
+              <a class="btn btn-ghost" href="#contact">Get in touch</a>
+            </div>
+
+            <div class="hero-meta">
+              <div class="meta-card">
+                <div class="meta-kicker">Focus</div>
+                <div class="meta-value">Backend + Frontend &amp; UI</div>
+              </div>
+              <a
+                class="meta-card meta-card--link"
+                href="https://github.com/Nichoruson"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div class="meta-kicker">GitHub</div>
+                <div class="meta-value">@Nichoruson</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-glow" aria-hidden="true"></div>
+            <div class="hero-photo">
+              <img
+                src="./photo.jpg"
+                alt="Rue Martine Nicholson A. Abando"
+                width="220"
+                height="220"
+                loading="eager"
+              />
+            </div>
+            <div class="hero-stats" aria-hidden="true">
+              <div class="stat-chip">
+                <strong>2</strong>
+                <span>Live projects</span>
+              </div>
+              <div class="stat-chip">
+                <strong>9+</strong>
+                <span>Tools &amp; skills</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <header class="section-head">
+            <span class="section-label">About</span>
+            <h2>Who I am</h2>
+          </header>
+
+          <div class="about-grid">
+            <div class="card about-highlight reveal">
+              <p>
+                I’m a web developer who enjoys turning ideas into polished,
+                accessible products — from interactive maps to referral systems
+                with real users in mind.
+              </p>
+            </div>
+
+            <div class="card reveal" style="--delay: 80ms">
+              <h3>What I do</h3>
+              <p>
+                I build intuitive interfaces, smooth interactions, and
+                experiences that stay clear from first click to last.
+              </p>
+              <ul class="bullets">
+                <li>Modern HTML, CSS, and React / Next.js</li>
+                <li>UI design with Figma, Canva &amp; Adobe</li>
+                <li>Backend basics with Java, Python, and MySQL</li>
+              </ul>
+            </div>
+
+            <div class="card reveal" style="--delay: 160ms">
+              <h3>What I value</h3>
+              <p>
+                Clean code, consistent design, and shipping work that’s easy
+                for people to use and understand.
+              </p>
+              <div class="tags">
+                <span class="tag">Figma</span>
+                <span class="tag">Accessibility</span>
+                <span class="tag">Performance</span>
+                <span class="tag">Collaboration</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tools" class="section section-alt">
+        <div class="container">
+          <header class="section-head">
+            <span class="section-label">Skills</span>
+            <h2>Tools &amp; proficiency</h2>
+          </header>
+
+          <div class="tools-grid">
+            <article class="card skill-card reveal">
+              <header class="card-row">
+                <h3>HTML</h3>
+                <span class="pill">Advanced</span>
+              </header>
+              <div class="meter" role="img" aria-label="HTML skill 90%">
+                <span style="--w: 90%"></span>
+              </div>
+              <p class="muted">Semantic markup and accessible structure.</p>
+            </article>
+
+            <article class="card skill-card reveal" style="--delay: 50ms">
+              <header class="card-row">
+                <h3>CSS</h3>
+                <span class="pill">Advanced</span>
+              </header>
+              <div class="meter" role="img" aria-label="CSS skill 85%">
+                <span style="--w: 85%"></span>
+              </div>
+              <p class="muted">Layout, animation, and polished styling.</p>
+            </article>
+
+            <article class="card skill-card reveal" style="--delay: 100ms">
+              <header class="card-row">
+                <h3>React</h3>
+                <span class="pill pill--blue">Intermediate</span>
+              </header>
+              <div class="meter" role="img" aria-label="React skill 70%">
+                <span style="--w: 70%"></span>
+              </div>
+              <p class="muted">Components, hooks, and interactive UIs.</p>
+            </article>
+
+            <article class="card skill-card reveal" style="--delay: 150ms">
+              <header class="card-row">
+                <h3>Next.js</h3>
+                <span class="pill pill--blue">Intermediate</span>
+              </header>
+              <div class="meter" role="img" aria-label="Next.js skill 70%">
+                <span style="--w: 70%"></span>
+              </div>
+              <p class="muted">Routing, server actions, deployment.</p>
+            </article>
+
+            <article class="card skill-card reveal" style="--delay: 50ms">
+              <header class="card-row">
+                <h3>Figma</h3>
+                <span class="pill pill--blue">Intermediate</span>
+              </header>
+              <div class="meter" role="img" aria-label="Figma skill 70%">
+                <span style="--w: 70%"></span>
+              </div>
+              <p class="muted">Wireframes, components, and UI mockups.</p>
+            </article>
+
+            <article class="card skill-card reveal" style="--delay: 100ms">
+              <header class="card-row">
+                <h3>Canva / Adobe</h3>
+                <span class="pill pill--blue">Intermediate</span>
+              </header>
+              <div class="meter" role="img" aria-label="Design tools skill 70%">
+                <span style="--w: 70%"></span>
+              </div>
+              <p class="muted">Graphics, assets, and visual polish.</p>
+            </article>
+
+            <article class="card skill-card reveal" style="--delay: 150ms">
+              <header class="card-row">
+                <h3>Java</h3>
+                <span class="pill pill--blue">Intermediate</span>
+              </header>
+              <div class="meter" role="img" aria-label="Java skill 65%">
+                <span style="--w: 65%"></span>
+              </div>
+              <p class="muted">OOP fundamentals and small projects.</p>
+            </article>
+
+            <article class="card skill-card reveal" style="--delay: 200ms">
+              <header class="card-row">
+                <h3>Python</h3>
+                <span class="pill pill--blue">Intermediate</span>
+              </header>
+              <div class="meter" role="img" aria-label="Python skill 60%">
+                <span style="--w: 60%"></span>
+              </div>
+              <p class="muted">Scripting and problem solving.</p>
+            </article>
+
+            <article class="card skill-card reveal" style="--delay: 250ms">
+              <header class="card-row">
+                <h3>MySQL / XAMPP</h3>
+                <span class="pill pill--blue">Intermediate</span>
+              </header>
+              <div class="meter" role="img" aria-label="MySQL skill 60%">
+                <span style="--w: 60%"></span>
+              </div>
+              <p class="muted">Databases and local dev setup.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <header class="section-head">
+            <span class="section-label">Work</span>
+            <h2>Featured projects</h2>
+          </header>
+
+          <div class="projects-grid">
+            <article class="project reveal">
+              <a
+                class="project-preview"
+                href="https://interactive-community-hazard-map.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open Interactive Community Hazard Map"
+              >
+                <iframe
+                  src="https://interactive-community-hazard-map.vercel.app/"
+                  title="Preview: Interactive Community Hazard Map"
+                  loading="lazy"
+                  tabindex="-1"
+                ></iframe>
+                <span class="project-preview-badge">Open live site →</span>
+              </a>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>Interactive Community Hazard Map</h3>
+                  <span class="pill">Featured</span>
+                </div>
+                <p class="muted">
+                  Geospatial map to view active hazard reports and submit new
+                  incidents through a server-action workflow.
+                </p>
+                <div class="tags">
+                  <span class="tag">React</span>
+                  <span class="tag">Next.js</span>
+                  <span class="tag">Maps</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    class="btn btn-sm"
+                    href="https://interactive-community-hazard-map.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Live demo
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project reveal" style="--delay: 100ms">
+              <a
+                class="project-preview"
+                href="https://onehealth-referral-production-c481.up.railway.app/login"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open OneHealth Referral System"
+              >
+                <iframe
+                  src="https://onehealth-referral-production-c481.up.railway.app/login"
+                  title="Preview: OneHealth Referral System"
+                  loading="lazy"
+                  tabindex="-1"
+                ></iframe>
+                <span class="project-preview-badge">Open live site →</span>
+              </a>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>OneHealth Referral System</h3>
+                </div>
+                <p class="muted">
+                  Health referral web app with secure login and role-based
+                  access for healthcare workflows.
+                </p>
+                <div class="tags">
+                  <span class="tag">Web App</span>
+                  <span class="tag">MySQL</span>
+                  <span class="tag">React</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    class="btn btn-sm"
+                    href="https://onehealth-referral-production-c481.up.railway.app/login"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Live demo
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-alt">
+        <div class="container">
+          <header class="section-head" style="text-align: center">
+            <span class="section-label">Contact</span>
+            <h2>Let’s connect</h2>
+          </header>
+
+          <div class="card contact-panel reveal">
+            <h3>Rue Martine Nicholson A. Abando</h3>
+            <p class="muted">Open to opportunities, collaborations, and questions.</p>
+            <div class="contact-actions">
+              <a class="btn" href="mailto:adrianorue790@gmail.com">Email</a>
+              <a class="btn btn-ghost" href="tel:+639158361102">0915 836 1102</a>
+              <a class="btn btn-ghost" href="tel:+639075358650">0907 535 8650</a>
+              <a
+                class="btn btn-ghost"
+                href="https://github.com/Nichoruson"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span class="muted">© <span id="year"></span> Rue Abando</span>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = String(
+        new Date().getFullYear()
+      );
+
+      const prefersReduced =
+        window.matchMedia &&
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      if (!prefersReduced) {
+        const io = new IntersectionObserver(
+          (entries) => {
+            for (const e of entries) {
+              if (e.isIntersecting) {
+                e.target.classList.add("is-visible");
+                io.unobserve(e.target);
+              }
+            }
+          },
+          { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+        );
+        document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+      } else {
+        document
+          .querySelectorAll(".reveal")
+          .forEach((el) => el.classList.add("is-visible"));
+      }
+    </script>
+  </body>
+</html>
