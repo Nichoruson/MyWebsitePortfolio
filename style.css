@@ -54,6 +54,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: var(--text);
+  overflow-x: hidden;
   background-color: var(--bg);
   background-image:
     radial-gradient(ellipse 80% 50% at 50% -20%, rgba(107, 159, 255, 0.18), transparent),
@@ -190,6 +191,56 @@ a:focus-visible,
 .nav a:not(.btn):hover {
   color: var(--text);
   background: var(--surface);
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.nav-toggle:hover {
+  background: var(--surface-hover);
+  border-color: var(--border-strong);
+}
+
+.nav-toggle-bar {
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--text);
+  transition:
+    transform 0.25s var(--ease),
+    opacity 0.2s ease;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+body.nav-open {
+  overflow: hidden;
 }
 
 /* Buttons */
@@ -892,26 +943,35 @@ a:focus-visible,
   }
 }
 
-/* Responsive */
+/* Responsive — tablet */
 @media (max-width: 980px) {
+  html {
+    scroll-padding-top: 80px;
+  }
+
   .hero {
     min-height: auto;
-    padding: 32px 0 64px;
+    padding: 28px 0 56px;
   }
 
   .hero-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 36px;
   }
 
   .hero-visual {
     order: -1;
-    min-height: 300px;
+    min-height: 280px;
   }
 
   .hero-photo {
     width: 180px;
     height: 180px;
+  }
+
+  .hero-glow {
+    width: 260px;
+    height: 260px;
   }
 
   .hero-stats {
@@ -920,20 +980,11 @@ a:focus-visible,
     bottom: 0;
     flex-direction: row;
     width: max-content;
+    max-width: calc(100% - 32px);
   }
 
   .projects-grid {
     grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 640px) {
-  .section {
-    padding: 72px 0;
-  }
-
-  .nav a:not(.btn) {
-    display: none;
   }
 
   .about-grid {
@@ -941,18 +992,230 @@ a:focus-visible,
   }
 
   .tools-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive — phone */
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 72px;
+  }
+
+  .container {
+    padding-left: max(16px, env(safe-area-inset-left));
+    padding-right: max(16px, env(safe-area-inset-right));
+  }
+
+  .site-header {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .header-inner {
+    padding: 12px 0;
+  }
+
+  .brand-text {
+    font-size: 0.95rem;
+  }
+
+  .brand-mark {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav {
+    position: fixed;
+    top: calc(56px + env(safe-area-inset-top, 0px));
+    left: 0;
+    right: 0;
+    z-index: 49;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+    padding: 16px max(16px, env(safe-area-inset-right))
+      max(20px, env(safe-area-inset-bottom))
+      max(16px, env(safe-area-inset-left));
+    background: rgba(5, 7, 15, 0.96);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: var(--shadow-md);
+    max-height: calc(100dvh - 56px - env(safe-area-inset-top, 0px));
+    overflow-y: auto;
+    transform: translateY(-8px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+      opacity 0.25s var(--ease),
+      transform 0.25s var(--ease),
+      visibility 0.25s;
+  }
+
+  .nav.is-open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .nav a:not(.btn) {
+    display: block;
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 1rem;
+    border-radius: var(--r);
+  }
+
+  .nav .nav-contact {
+    width: 100%;
+    margin-top: 8px;
+    padding: 14px 16px;
+    min-height: 48px;
+  }
+
+  .section {
+    padding: 64px 0;
+  }
+
+  .section-head {
+    margin-bottom: 28px;
+  }
+
+  .section-head h2 {
+    font-size: 1.65rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.85rem, 8vw, 2.5rem);
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+  }
+
+  .hero-cta .btn {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  .hero-meta {
+    flex-direction: column;
+  }
+
+  .meta-card {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .hero-visual {
+    min-height: auto;
+    padding-bottom: 8px;
   }
 
   .hero-stats {
     position: static;
     transform: none;
-    justify-content: center;
-    margin-top: 24px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 280px;
+    margin: 20px auto 0;
+  }
+
+  .stat-chip {
+    text-align: center;
+  }
+
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 22px;
+  }
+
+  .about-highlight {
+    padding: 24px;
+  }
+
+  .project-body {
+    padding: 20px;
+  }
+
+  .project-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-preview {
+    aspect-ratio: 16 / 11;
+  }
+
+  .project-preview-badge {
+    opacity: 1;
+    transform: none;
+    font-size: 0.7rem;
+    padding: 6px 12px;
+  }
+
+  .project-actions .btn {
+    width: 100%;
+    min-height: 48px;
   }
 
   .contact-panel {
-    padding: 28px 20px;
+    padding: 24px 18px;
+    text-align: left;
+  }
+
+  .contact-panel h3 {
+    font-size: 1.15rem;
+    word-break: break-word;
+  }
+
+  .contact-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-actions .btn {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    padding-bottom: max(24px, env(safe-area-inset-bottom));
+  }
+}
+
+@media (max-width: 380px) {
+  .eyebrow {
+    font-size: 0.7rem;
+    padding: 5px 12px;
+  }
+
+  .brand-text {
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .pill {
+    font-size: 0.62rem;
   }
 }
 
