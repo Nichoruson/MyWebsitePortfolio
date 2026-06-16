@@ -1,950 +1,901 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-    />
-    <title>Rue Abando | Portfolio</title>
-    <meta
-      name="description"
-      content="Portfolio of Rue Martine Nicholson A. Abando — web developer, projects, and skills."
-    />
-    <meta property="og:title" content="Rue Abando | Portfolio" />
-    <meta
-      property="og:description"
-      content="Web developer portfolio — projects, skills, and contact."
-    />
-    <meta property="og:image" content="./assets/photo.jpg" />
-    <meta property="og:type" content="website" />
-    <link rel="icon" href="./assets/photo.jpg" type="image/jpeg" />
-    <link rel="apple-touch-icon" href="./assets/photo.jpg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <!-- Custom cursor -->
-    <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
-    <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
 
-    <!-- Particle canvas -->
-    <canvas id="particles-canvas" aria-hidden="true"></canvas>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Rue Abando | Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Rue Martine Nicholson A. Abando — web developer, projects, and skills." />
+  <meta property="og:title" content="Rue Abando | Portfolio" />
+  <meta property="og:description" content="Web developer portfolio — projects, skills, and contact." />
+  <meta property="og:image" content="./assets/photo.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="./assets/photo.jpg" type="image/jpeg" />
+  <link rel="apple-touch-icon" href="./assets/photo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
 
-    <div class="scroll-progress" aria-hidden="true"></div>
-    <div class="aurora-container" aria-hidden="true">
-      <div class="aurora-blob aurora-blob--1"></div>
-      <div class="aurora-blob aurora-blob--2"></div>
-      <div class="aurora-blob aurora-blob--3"></div>
+<body>
+  <!-- Custom cursor -->
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Particle canvas -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="aurora-container" aria-hidden="true">
+    <div class="aurora-blob aurora-blob--1"></div>
+    <div class="aurora-blob aurora-blob--2"></div>
+    <div class="aurora-blob aurora-blob--3"></div>
+  </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-mark">
+          <img src="./assets/photo.jpg" alt="" width="36" height="36" decoding="async" />
+        </span>
+        <span class="brand-text">Rue Abando</span>
+      </a>
+
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#tools">Skills</a>
+        <a href="#projects">Projects</a>
+        <a class="btn btn-sm nav-contact" href="#contact">Contact</a>
+      </nav>
     </div>
-    <a class="skip-link" href="#main">Skip to content</a>
+  </header>
 
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="#top" aria-label="Go to top">
-          <span class="brand-mark">
-            <img
-              src="./assets/photo.jpg"
-              alt=""
-              width="36"
-              height="36"
-              decoding="async"
-            />
-          </span>
-          <span class="brand-text">Rue Abando</span>
-        </a>
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="typed-text">Web Developer</span><span class="cursor"
+              aria-hidden="true">&nbsp;</span></p>
+          <h1>
+            Building thoughtful web experiences
+            <span class="accent" data-text="that feel fast, clear, and alive.">that feel fast, clear, and alive.</span>
+          </h1>
+          <p class="lead">
+            Hi, I’m <strong>Rue Martine Nicholson A. Abando</strong> — I
+            design and build responsive, highly interactive web applications
+            with polished user interfaces and clean, scalable code.
+          </p>
 
-        <button
-          type="button"
-          class="nav-toggle"
-          aria-expanded="false"
-          aria-controls="site-nav"
-          aria-label="Open menu"
-        >
-          <span class="nav-toggle-bar" aria-hidden="true"></span>
-          <span class="nav-toggle-bar" aria-hidden="true"></span>
-          <span class="nav-toggle-bar" aria-hidden="true"></span>
-        </button>
+          <div class="hero-cta">
+            <a class="btn" href="#projects">See my work</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
 
-        <nav class="nav" id="site-nav" aria-label="Primary">
-          <a href="#about">About</a>
-          <a href="#tools">Skills</a>
-          <a href="#projects">Projects</a>
-          <a class="btn btn-sm nav-contact" href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
-
-    <main id="main">
-      <section id="top" class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow"><span class="typed-text">Web Developer</span><span class="cursor" aria-hidden="true">&nbsp;</span></p>
-            <h1>
-              Building thoughtful web experiences
-              <span class="accent" data-text="that feel fast, clear, and alive.">that feel fast, clear, and alive.</span>
-            </h1>
-            <p class="lead">
-              Hi, I’m <strong>Rue Martine Nicholson A. Abando</strong> — I
-              design and build responsive, highly interactive web applications
-              with polished user interfaces and clean, scalable code.
-            </p>
-
-            <div class="hero-cta">
-              <a class="btn" href="#projects">See my work</a>
-              <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          <div class="hero-meta">
+            <div class="meta-card">
+              <div class="meta-kicker">Focus</div>
+              <div class="meta-value">Backend + Frontend &amp; UI</div>
             </div>
+            <a class="meta-card meta-card--link" href="https://github.com/Nichoruson" target="_blank" rel="noreferrer">
+              <div class="meta-kicker">GitHub</div>
+              <div class="meta-value">@Nichoruson</div>
+            </a>
+          </div>
+        </div>
 
-            <div class="hero-meta">
-              <div class="meta-card">
-                <div class="meta-kicker">Focus</div>
-                <div class="meta-value">Backend + Frontend &amp; UI</div>
+        <div class="hero-visual">
+          <div class="hero-glow" aria-hidden="true"></div>
+          <div class="hero-ring" aria-hidden="true"></div>
+          <div class="hero-ring-inner" aria-hidden="true"></div>
+          <div class="hero-orbit-dot hero-orbit-dot--1" aria-hidden="true"></div>
+          <div class="hero-orbit-dot hero-orbit-dot--2" aria-hidden="true"></div>
+          <div class="hero-orbit-dot hero-orbit-dot--3" aria-hidden="true"></div>
+          <div class="hero-photo" id="hero-photo">
+            <img src="./assets/photo.jpg" alt="Rue Martine Nicholson A. Abando" width="220" height="220" loading="eager"
+              fetchpriority="high" decoding="async" />
+          </div>
+          <div class="hero-stats" aria-hidden="true">
+            <div class="stat-chip">
+              <strong>2</strong>
+              <span>Live projects</span>
+            </div>
+            <div class="stat-chip">
+              <strong>9+</strong>
+              <span>Tools &amp; skills</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-down-indicator" aria-hidden="true">
+        <a href="#about" class="scroll-mouse" aria-label="Scroll down">
+          <span class="mouse-wheel"></span>
+        </a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section-head">
+          <div class="section-bg-text">01 / BIO</div>
+          <span class="section-label">About</span>
+          <h2>Who I am</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="card about-profile reveal">
+            <div class="about-photo">
+              <img src="./assets/photo.jpg" alt="Rue Martine Nicholson A. Abando" width="120" height="120"
+                loading="lazy" decoding="async" />
+            </div>
+            <div class="about-profile-copy">
+              <h3>Rue Martine Nicholson A. Abando</h3>
+              <p>
+                I’m a web developer dedicated to
+                engineering polished, accessible web experiences
+                designed around real user needs.
+              </p>
+            </div>
+          </div>
+
+          <div class="card reveal" style="--delay: 80ms">
+            <h3>What I do</h3>
+            <p>
+              I develop interactive frontend architectures and structured backend logic,
+              bridging clean aesthetics with powerful user-centered features.
+            </p>
+            <ul class="bullets">
+              <li>Responsive development with CSS, React, and Next.js</li>
+              <li>Polished user experiences, layouts, and Figma prototyping</li>
+              <li>Backend and systems logic with Java, Python, and MySQL</li>
+            </ul>
+          </div>
+
+          <div class="card reveal" style="--delay: 160ms">
+            <h3>What I value</h3>
+            <p>
+              Writing scalable code, adhering to web standard accessibility,
+              and delivering visual consistency that makes sites feel simple and intuitive.
+            </p>
+            <div class="tags">
+              <span class="tag">UX Engineering</span>
+              <span class="tag">Accessibility (A11y)</span>
+              <span class="tag">Clean Code</span>
+              <span class="tag">Performance Optimization</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <div class="section-bg-text">02 / SKILLS</div>
+          <span class="section-label">Skills</span>
+          <h2>Tools &amp; proficiency</h2>
+        </header>
+
+        <div class="skills-categories">
+
+          <!-- Category 1: Frontend -->
+          <div class="skills-category-panel reveal">
+            <h3 class="category-title"><span class="accent-dot"></span>Frontend Core</h3>
+            <div class="skills-list">
+              <article class="card skill-card">
+                <header class="card-row">
+                  <div class="skill-title">
+                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="16 18 22 12 16 6" />
+                      <polyline points="8 6 2 12 8 18" />
+                      <line x1="14" y1="4" x2="10" y2="20" />
+                    </svg>
+                    <h3>HTML</h3>
+                  </div>
+                  <span class="pill">Advanced</span>
+                </header>
+                <div class="meter" role="img" aria-label="HTML skill 90%">
+                  <span style="--w: 90%"></span>
+                </div>
+                <p class="muted">Semantic markup and accessible structure.</p>
+              </article>
+
+              <article class="card skill-card">
+                <header class="card-row">
+                  <div class="skill-title">
+                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                      <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                      <line x1="12" y1="22.08" x2="12" y2="12" />
+                    </svg>
+                    <h3>CSS</h3>
+                  </div>
+                  <span class="pill">Advanced</span>
+                </header>
+                <div class="meter" role="img" aria-label="CSS skill 85%">
+                  <span style="--w: 85%"></span>
+                </div>
+                <p class="muted">Layout, animation, and polished styling.</p>
+              </article>
+
+              <article class="card skill-card">
+                <header class="card-row">
+                  <div class="skill-title">
+                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(0 12 12)" />
+                      <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)" />
+                      <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)" />
+                      <circle cx="12" cy="12" r="2" fill="currentColor" />
+                    </svg>
+                    <h3>React</h3>
+                  </div>
+                  <span class="pill pill--blue">Intermediate</span>
+                </header>
+                <div class="meter" role="img" aria-label="React skill 70%">
+                  <span style="--w: 70%"></span>
+                </div>
+                <p class="muted">Components, hooks, and interactive UIs.</p>
+              </article>
+
+              <article class="card skill-card">
+                <header class="card-row">
+                  <div class="skill-title">
+                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                      stroke-width="2" stroke-linecap="round">
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M8 16V8l8 9.5" />
+                      <path d="M16 8v5" />
+                    </svg>
+                    <h3>Next.js</h3>
+                  </div>
+                  <span class="pill pill--blue">Intermediate</span>
+                </header>
+                <div class="meter" role="img" aria-label="Next.js skill 70%">
+                  <span style="--w: 70%"></span>
+                </div>
+                <p class="muted">Routing, server actions, deployment.</p>
+              </article>
+            </div>
+          </div>
+
+          <!-- Category 2: Backend -->
+          <div class="skills-category-panel reveal" style="--delay: 100ms">
+            <h3 class="category-title"><span class="accent-dot"></span>Backend Systems</h3>
+            <div class="skills-list">
+              <article class="card skill-card">
+                <header class="card-row">
+                  <div class="skill-title">
+                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+                      <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+                      <line x1="6" y1="2" x2="6" y2="5" />
+                      <line x1="10" y1="2" x2="10" y2="5" />
+                      <line x1="14" y1="2" x2="14" y2="5" />
+                    </svg>
+                    <h3>Java</h3>
+                  </div>
+                  <span class="pill pill--blue">Intermediate</span>
+                </header>
+                <div class="meter" role="img" aria-label="Java skill 65%">
+                  <span style="--w: 65%"></span>
+                </div>
+                <p class="muted">OOP fundamentals and small projects.</p>
+              </article>
+
+              <article class="card skill-card">
+                <header class="card-row">
+                  <div class="skill-title">
+                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M12 2H9a5 5 0 0 0-5 5v3a5 5 0 0 0 5 5h3a1 1 0 0 1 1 1v2a3 3 0 0 1-3 3H7a1 1 0 0 0 0 2h3a5 5 0 0 0 5-5v-3a5 5 0 0 0-5-5H7a1 1 0 0 1-1-1V7a3 3 0 0 1 3-3h3a1 1 0 0 0 0-2z" />
+                      <circle cx="9" cy="6" r="1" fill="currentColor" />
+                      <circle cx="15" cy="18" r="1" fill="currentColor" />
+                    </svg>
+                    <h3>Python</h3>
+                  </div>
+                  <span class="pill pill--blue">Intermediate</span>
+                </header>
+                <div class="meter" role="img" aria-label="Python skill 60%">
+                  <span style="--w: 60%"></span>
+                </div>
+                <p class="muted">Scripting and problem solving.</p>
+              </article>
+
+              <article class="card skill-card">
+                <header class="card-row">
+                  <div class="skill-title">
+                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <ellipse cx="12" cy="5" rx="9" ry="3" />
+                      <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                      <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3" />
+                    </svg>
+                    <h3>MySQL / XAMPP</h3>
+                  </div>
+                  <span class="pill pill--blue">Intermediate</span>
+                </header>
+                <div class="meter" role="img" aria-label="MySQL skill 60%">
+                  <span style="--w: 60%"></span>
+                </div>
+                <p class="muted">Databases and local dev setup.</p>
+              </article>
+            </div>
+          </div>
+
+          <!-- Category 3: Design -->
+          <div class="skills-category-panel reveal" style="--delay: 200ms">
+            <h3 class="category-title"><span class="accent-dot"></span>Design &amp; Tools</h3>
+            <div class="skills-list">
+              <article class="card skill-card">
+                <header class="card-row">
+                  <div class="skill-title">
+                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z" />
+                      <path d="M12 2h3.5a3.5 3.5 0 1 1-3.5 3.5V2z" />
+                      <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z" />
+                      <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z" />
+                      <path d="M12 9h3.5a3.5 3.5 0 1 1-3.5 3.5V9z" />
+                    </svg>
+                    <h3>Figma</h3>
+                  </div>
+                  <span class="pill pill--blue">Intermediate</span>
+                </header>
+                <div class="meter" role="img" aria-label="Figma skill 70%">
+                  <span style="--w: 70%"></span>
+                </div>
+                <p class="muted">Wireframes, components, and UI mockups.</p>
+              </article>
+
+              <article class="card skill-card">
+                <header class="card-row">
+                  <div class="skill-title">
+                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                      <circle cx="8.5" cy="8.5" r="1.5" />
+                      <polyline points="21 15 16 10 5 21" />
+                    </svg>
+                    <h3>Canva / Adobe</h3>
+                  </div>
+                  <span class="pill pill--blue">Intermediate</span>
+                </header>
+                <div class="meter" role="img" aria-label="Design tools skill 70%">
+                  <span style="--w: 70%"></span>
+                </div>
+                <p class="muted">Graphics, assets, and visual polish.</p>
+              </article>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <header class="section-head">
+          <div class="section-bg-text">03 / WORK</div>
+          <span class="section-label">Work</span>
+          <h2>Featured projects</h2>
+        </header>
+
+        <div class="projects-grid">
+          <article class="project project--emerald reveal">
+            <div class="browser-mockup">
+              <div class="browser-header">
+                <div class="browser-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <div class="browser-address">tabang-daet.vercel.app</div>
               </div>
-              <a
-                class="meta-card meta-card--link"
-                href="https://github.com/Nichoruson"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div class="meta-kicker">GitHub</div>
-                <div class="meta-value">@Nichoruson</div>
+              <a class="project-preview" href="https://tabang-daet.vercel.app/" target="_blank" rel="noreferrer"
+                aria-label="Open Tabang Daet Emergency System">
+                <iframe src="https://tabang-daet.vercel.app/" title="Preview: Tabang Daet Emergency System"
+                  loading="lazy" tabindex="-1"></iframe>
+                <span class="project-preview-badge">Open live site →</span>
+              </a>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>Tabang Daet</h3>
+                <span class="pill">Featured</span>
+              </div>
+              <p class="muted">
+                Web-based emergency reporting and navigation system designed to quickly connect users with critical
+                assistance and coordinate crisis response efforts.
+              </p>
+              <div class="tags">
+                <span class="tag">Web App</span>
+                <span class="tag">React</span>
+                <span class="tag">Emergency System</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn-sm" href="https://tabang-daet.vercel.app/" target="_blank" rel="noreferrer">
+                  Live demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project--indigo reveal" style="--delay: 100ms">
+            <div class="browser-mockup">
+              <div class="browser-header">
+                <div class="browser-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <div class="browser-address">onehealth-referral.production</div>
+              </div>
+              <a class="project-preview" href="https://onehealth-referral-production-c481.up.railway.app/login"
+                target="_blank" rel="noreferrer" aria-label="Open OneHealth Referral System">
+                <iframe src="https://onehealth-referral-production-c481.up.railway.app/login"
+                  title="Preview: OneHealth Referral System" loading="lazy" tabindex="-1"></iframe>
+                <span class="project-preview-badge">Open live site →</span>
+              </a>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>OneHealth Referral System</h3>
+              </div>
+              <p class="muted">
+                Health referral web app with secure login and role-based
+                access for healthcare workflows.
+              </p>
+              <div class="tags">
+                <span class="tag">Web App</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">React</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn-sm" href="https://onehealth-referral-production-c481.up.railway.app/login"
+                  target="_blank" rel="noreferrer">
+                  Live demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project--violet reveal" style="--delay: 200ms">
+            <div class="browser-mockup">
+              <div class="browser-header">
+                <div class="browser-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <div class="browser-address">hazard-map.vercel.app</div>
+              </div>
+              <a class="project-preview" href="https://interactive-community-hazard-map.vercel.app/" target="_blank"
+                rel="noreferrer" aria-label="Open Interactive Community Hazard Map">
+                <iframe src="https://interactive-community-hazard-map.vercel.app/"
+                  title="Preview: Interactive Community Hazard Map" loading="lazy" tabindex="-1"></iframe>
+                <span class="project-preview-badge">Open live site →</span>
+              </a>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>Interactive Community Hazard Map</h3>
+              </div>
+              <p class="muted">
+                Geospatial map to view active hazard reports and submit new
+                incidents through a server-action workflow.
+              </p>
+              <div class="tags">
+                <span class="tag">React</span>
+                <span class="tag">Next.js</span>
+                <span class="tag">Maps</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn-sm" href="https://interactive-community-hazard-map.vercel.app/" target="_blank"
+                  rel="noreferrer">
+                  Live demo
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <header class="section-head section-head--center" style="text-align: center">
+          <div class="section-bg-text">04 / TALK</div>
+          <span class="section-label">Contact</span>
+          <h2>Let’s connect</h2>
+        </header>
+
+        <div class="contact-grid">
+          <div class="card contact-panel reveal">
+            <div class="contact-photo">
+              <img src="./assets/photo.jpg" alt="Rue Martine Nicholson A. Abando" width="72" height="72" loading="lazy"
+                decoding="async" />
+            </div>
+            <h3>Rue Martine Nicholson A. Abando</h3>
+            <p class="muted">Open to opportunities, collaborations, and questions.</p>
+
+            <div class="contact-links">
+              <a class="contact-link-item" href="mailto:adrianorue790@gmail.com">
+                <div class="icon-wrap">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </div>
+                <div class="link-info">
+                  <span class="label">Email</span>
+                  <span class="value">adrianorue790@gmail.com</span>
+                </div>
+              </a>
+              <a class="contact-link-item" href="tel:+639158361102">
+                <div class="icon-wrap">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                </div>
+                <div class="link-info">
+                  <span class="label">Primary Phone</span>
+                  <span class="value">0915 836 1102</span>
+                </div>
+              </a>
+              <a class="contact-link-item" href="tel:+639075358650">
+                <div class="icon-wrap">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                </div>
+                <div class="link-info">
+                  <span class="label">Secondary Phone</span>
+                  <span class="value">0907 535 8650</span>
+                </div>
+              </a>
+              <a class="contact-link-item" href="https://github.com/Nichoruson" target="_blank" rel="noreferrer">
+                <div class="icon-wrap">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                  </svg>
+                </div>
+                <div class="link-info">
+                  <span class="label">GitHub</span>
+                  <span class="value">@Nichoruson</span>
+                </div>
               </a>
             </div>
           </div>
 
-          <div class="hero-visual">
-            <div class="hero-glow" aria-hidden="true"></div>
-            <div class="hero-ring" aria-hidden="true"></div>
-            <div class="hero-ring-inner" aria-hidden="true"></div>
-            <div class="hero-orbit-dot hero-orbit-dot--1" aria-hidden="true"></div>
-            <div class="hero-orbit-dot hero-orbit-dot--2" aria-hidden="true"></div>
-            <div class="hero-orbit-dot hero-orbit-dot--3" aria-hidden="true"></div>
-            <div class="hero-photo" id="hero-photo">
-              <img
-                src="./assets/photo.jpg"
-                alt="Rue Martine Nicholson A. Abando"
-                width="220"
-                height="220"
-                loading="eager"
-                fetchpriority="high"
-                decoding="async"
-              />
-            </div>
-            <div class="hero-stats" aria-hidden="true">
-              <div class="stat-chip">
-                <strong>2</strong>
-                <span>Live projects</span>
+          <div class="card contact-form-card reveal" style="--delay: 100ms">
+            <h3>Send a message</h3>
+            <p class="muted">Fill out the form below and I'll get back to you as soon as possible.</p>
+
+            <form class="contact-form" action="https://formspree.io/f/adrianorue790@gmail.com" method="POST"
+              id="portfolio-contact-form">
+              <div class="form-group">
+                <input type="text" id="name" name="name" required placeholder=" " />
+                <label for="name">Your Name</label>
               </div>
-              <div class="stat-chip">
-                <strong>9+</strong>
-                <span>Tools &amp; skills</span>
+              <div class="form-group">
+                <input type="email" id="email" name="email" required placeholder=" " />
+                <label for="email">Email Address</label>
               </div>
-            </div>
+              <div class="form-group">
+                <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                <label for="message">Message</label>
+              </div>
+              <button type="submit" class="btn btn-submit">
+                <span>Send Message</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
-        <div class="scroll-down-indicator" aria-hidden="true">
-          <a href="#about" class="scroll-mouse" aria-label="Scroll down">
-            <span class="mouse-wheel"></span>
-          </a>
-        </div>
-      </section>
-
-      <section id="about" class="section">
-        <div class="container">
-          <header class="section-head">
-            <div class="section-bg-text">01 / BIO</div>
-            <span class="section-label">About</span>
-            <h2>Who I am</h2>
-          </header>
-
-          <div class="about-grid">
-            <div class="card about-profile reveal">
-              <div class="about-photo">
-                <img
-                  src="./assets/photo.jpg"
-                  alt="Rue Martine Nicholson A. Abando"
-                  width="120"
-                  height="120"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <div class="about-profile-copy">
-                <h3>Rue Martine Nicholson A. Abando</h3>
-                <p>
-                  I’m a web developer dedicated to 
-                  engineering polished, accessible web experiences
-                  designed around real user needs.
-                </p>
-              </div>
-            </div>
-
-            <div class="card reveal" style="--delay: 80ms">
-              <h3>What I do</h3>
-              <p>
-                I develop interactive frontend architectures and structured backend logic, 
-                bridging clean aesthetics with powerful user-centered features.
-              </p>
-              <ul class="bullets">
-                <li>Responsive development with CSS, React, and Next.js</li>
-                <li>Polished user experiences, layouts, and Figma prototyping</li>
-                <li>Backend and systems logic with Java, Python, and MySQL</li>
-              </ul>
-            </div>
-
-            <div class="card reveal" style="--delay: 160ms">
-              <h3>What I value</h3>
-              <p>
-                Writing scalable code, adhering to web standard accessibility, 
-                and delivering visual consistency that makes sites feel simple and intuitive.
-              </p>
-              <div class="tags">
-                <span class="tag">UX Engineering</span>
-                <span class="tag">Accessibility (A11y)</span>
-                <span class="tag">Clean Code</span>
-                <span class="tag">Performance Optimization</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="tools" class="section section-alt">
-        <div class="container">
-          <header class="section-head">
-            <div class="section-bg-text">02 / SKILLS</div>
-            <span class="section-label">Skills</span>
-            <h2>Tools &amp; proficiency</h2>
-          </header>
-
-          <div class="skills-categories">
-            
-            <!-- Category 1: Frontend -->
-            <div class="skills-category-panel reveal">
-              <h3 class="category-title"><span class="accent-dot"></span>Frontend Core</h3>
-              <div class="skills-list">
-                <article class="card skill-card">
-                  <header class="card-row">
-                    <div class="skill-title">
-                      <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="16 18 22 12 16 6" />
-                        <polyline points="8 6 2 12 8 18" />
-                        <line x1="14" y1="4" x2="10" y2="20" />
-                      </svg>
-                      <h3>HTML</h3>
-                    </div>
-                    <span class="pill">Advanced</span>
-                  </header>
-                  <div class="meter" role="img" aria-label="HTML skill 90%">
-                    <span style="--w: 90%"></span>
-                  </div>
-                  <p class="muted">Semantic markup and accessible structure.</p>
-                </article>
-
-                <article class="card skill-card">
-                  <header class="card-row">
-                    <div class="skill-title">
-                      <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-                        <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
-                        <line x1="12" y1="22.08" x2="12" y2="12" />
-                      </svg>
-                      <h3>CSS</h3>
-                    </div>
-                    <span class="pill">Advanced</span>
-                  </header>
-                  <div class="meter" role="img" aria-label="CSS skill 85%">
-                    <span style="--w: 85%"></span>
-                  </div>
-                  <p class="muted">Layout, animation, and polished styling.</p>
-                </article>
-
-                <article class="card skill-card">
-                  <header class="card-row">
-                    <div class="skill-title">
-                      <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(0 12 12)" />
-                        <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)" />
-                        <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)" />
-                        <circle cx="12" cy="12" r="2" fill="currentColor"/>
-                      </svg>
-                      <h3>React</h3>
-                    </div>
-                    <span class="pill pill--blue">Intermediate</span>
-                  </header>
-                  <div class="meter" role="img" aria-label="React skill 70%">
-                    <span style="--w: 70%"></span>
-                  </div>
-                  <p class="muted">Components, hooks, and interactive UIs.</p>
-                </article>
-
-                <article class="card skill-card">
-                  <header class="card-row">
-                    <div class="skill-title">
-                      <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                        <circle cx="12" cy="12" r="10" />
-                        <path d="M8 16V8l8 9.5" />
-                        <path d="M16 8v5" />
-                      </svg>
-                      <h3>Next.js</h3>
-                    </div>
-                    <span class="pill pill--blue">Intermediate</span>
-                  </header>
-                  <div class="meter" role="img" aria-label="Next.js skill 70%">
-                    <span style="--w: 70%"></span>
-                  </div>
-                  <p class="muted">Routing, server actions, deployment.</p>
-                </article>
-              </div>
-            </div>
-
-            <!-- Category 2: Backend -->
-            <div class="skills-category-panel reveal" style="--delay: 100ms">
-              <h3 class="category-title"><span class="accent-dot"></span>Backend Systems</h3>
-              <div class="skills-list">
-                <article class="card skill-card">
-                  <header class="card-row">
-                    <div class="skill-title">
-                      <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
-                        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
-                        <line x1="6" y1="2" x2="6" y2="5" />
-                        <line x1="10" y1="2" x2="10" y2="5" />
-                        <line x1="14" y1="2" x2="14" y2="5" />
-                      </svg>
-                      <h3>Java</h3>
-                    </div>
-                    <span class="pill pill--blue">Intermediate</span>
-                  </header>
-                  <div class="meter" role="img" aria-label="Java skill 65%">
-                    <span style="--w: 65%"></span>
-                  </div>
-                  <p class="muted">OOP fundamentals and small projects.</p>
-                </article>
-
-                <article class="card skill-card">
-                  <header class="card-row">
-                    <div class="skill-title">
-                      <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 2H9a5 5 0 0 0-5 5v3a5 5 0 0 0 5 5h3a1 1 0 0 1 1 1v2a3 3 0 0 1-3 3H7a1 1 0 0 0 0 2h3a5 5 0 0 0 5-5v-3a5 5 0 0 0-5-5H7a1 1 0 0 1-1-1V7a3 3 0 0 1 3-3h3a1 1 0 0 0 0-2z" />
-                        <circle cx="9" cy="6" r="1" fill="currentColor" />
-                        <circle cx="15" cy="18" r="1" fill="currentColor" />
-                      </svg>
-                      <h3>Python</h3>
-                    </div>
-                    <span class="pill pill--blue">Intermediate</span>
-                  </header>
-                  <div class="meter" role="img" aria-label="Python skill 60%">
-                    <span style="--w: 60%"></span>
-                  </div>
-                  <p class="muted">Scripting and problem solving.</p>
-                </article>
-
-                <article class="card skill-card">
-                  <header class="card-row">
-                    <div class="skill-title">
-                      <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <ellipse cx="12" cy="5" rx="9" ry="3" />
-                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
-                        <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3" />
-                      </svg>
-                      <h3>MySQL / XAMPP</h3>
-                    </div>
-                    <span class="pill pill--blue">Intermediate</span>
-                  </header>
-                  <div class="meter" role="img" aria-label="MySQL skill 60%">
-                    <span style="--w: 60%"></span>
-                  </div>
-                  <p class="muted">Databases and local dev setup.</p>
-                </article>
-              </div>
-            </div>
-
-            <!-- Category 3: Design -->
-            <div class="skills-category-panel reveal" style="--delay: 200ms">
-              <h3 class="category-title"><span class="accent-dot"></span>Design &amp; Tools</h3>
-              <div class="skills-list">
-                <article class="card skill-card">
-                  <header class="card-row">
-                    <div class="skill-title">
-                      <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z" />
-                        <path d="M12 2h3.5a3.5 3.5 0 1 1-3.5 3.5V2z" />
-                        <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z" />
-                        <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z" />
-                        <path d="M12 9h3.5a3.5 3.5 0 1 1-3.5 3.5V9z" />
-                      </svg>
-                      <h3>Figma</h3>
-                    </div>
-                    <span class="pill pill--blue">Intermediate</span>
-                  </header>
-                  <div class="meter" role="img" aria-label="Figma skill 70%">
-                    <span style="--w: 70%"></span>
-                  </div>
-                  <p class="muted">Wireframes, components, and UI mockups.</p>
-                </article>
-
-                <article class="card skill-card">
-                  <header class="card-row">
-                    <div class="skill-title">
-                      <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                        <circle cx="8.5" cy="8.5" r="1.5" />
-                        <polyline points="21 15 16 10 5 21" />
-                      </svg>
-                      <h3>Canva / Adobe</h3>
-                    </div>
-                    <span class="pill pill--blue">Intermediate</span>
-                  </header>
-                  <div class="meter" role="img" aria-label="Design tools skill 70%">
-                    <span style="--w: 70%"></span>
-                  </div>
-                  <p class="muted">Graphics, assets, and visual polish.</p>
-                </article>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="section">
-        <div class="container">
-          <header class="section-head">
-            <div class="section-bg-text">03 / WORK</div>
-            <span class="section-label">Work</span>
-            <h2>Featured projects</h2>
-          </header>
-      
-          <div class="projects-grid">
-            <article class="project project--emerald reveal">
-              <div class="browser-mockup">
-                <div class="browser-header">
-                  <div class="browser-dots">
-                    <span class="dot red"></span>
-                    <span class="dot yellow"></span>
-                    <span class="dot green"></span>
-                  </div>
-                  <div class="browser-address">tabang-daet.vercel.app</div>
-                </div>
-                <a
-                  class="project-preview"
-                  href="https://tabang-daet.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="Open Tabang Daet Emergency System"
-                >
-                  <iframe
-                    src="https://tabang-daet.vercel.app/"
-                    title="Preview: Tabang Daet Emergency System"
-                    loading="lazy"
-                    tabindex="-1"
-                  ></iframe>
-                  <span class="project-preview-badge">Open live site →</span>
-                </a>
-              </div>
-              <div class="project-body">
-                <div class="project-top">
-                  <h3>Tabang Daet</h3>
-                  <span class="pill">Featured</span>
-                </div>
-                <p class="muted">
-                  Web-based emergency reporting and navigation system designed to quickly connect users with critical assistance and coordinate crisis response efforts.
-                </p>
-                <div class="tags">
-                  <span class="tag">Web App</span>
-                  <span class="tag">React</span>
-                  <span class="tag">Emergency System</span>
-                </div>
-                <div class="project-actions">
-                  <a
-                    class="btn btn-sm"
-                    href="https://tabang-daet.vercel.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Live demo
-                  </a>
-                </div>
-              </div>
-            </article>
-      
-            <article class="project project--indigo reveal" style="--delay: 100ms">
-              <div class="browser-mockup">
-                <div class="browser-header">
-                  <div class="browser-dots">
-                    <span class="dot red"></span>
-                    <span class="dot yellow"></span>
-                    <span class="dot green"></span>
-                  </div>
-                  <div class="browser-address">onehealth-referral.production</div>
-                </div>
-                <a
-                  class="project-preview"
-                  href="https://onehealth-referral-production-c481.up.railway.app/login"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="Open OneHealth Referral System"
-                >
-                  <iframe
-                    src="https://onehealth-referral-production-c481.up.railway.app/login"
-                    title="Preview: OneHealth Referral System"
-                    loading="lazy"
-                    tabindex="-1"
-                  ></iframe>
-                  <span class="project-preview-badge">Open live site →</span>
-                </a>
-              </div>
-              <div class="project-body">
-                <div class="project-top">
-                  <h3>OneHealth Referral System</h3>
-                </div>
-                <p class="muted">
-                  Health referral web app with secure login and role-based
-                  access for healthcare workflows.
-                </p>
-                <div class="tags">
-                  <span class="tag">Web App</span>
-                  <span class="tag">MySQL</span>
-                  <span class="tag">React</span>
-                </div>
-                <div class="project-actions">
-                  <a
-                    class="btn btn-sm"
-                    href="https://onehealth-referral-production-c481.up.railway.app/login"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Live demo
-                  </a>
-                </div>
-              </div>
-            </article>
-      
-            <article class="project project--violet reveal" style="--delay: 200ms">
-              <div class="browser-mockup">
-                <div class="browser-header">
-                  <div class="browser-dots">
-                    <span class="dot red"></span>
-                    <span class="dot yellow"></span>
-                    <span class="dot green"></span>
-                  </div>
-                  <div class="browser-address">hazard-map.vercel.app</div>
-                </div>
-                <a
-                  class="project-preview"
-                  href="https://interactive-community-hazard-map.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="Open Interactive Community Hazard Map"
-                >
-                  <iframe
-                    src="https://interactive-community-hazard-map.vercel.app/"
-                    title="Preview: Interactive Community Hazard Map"
-                    loading="lazy"
-                    tabindex="-1"
-                  ></iframe>
-                  <span class="project-preview-badge">Open live site →</span>
-                </a>
-              </div>
-              <div class="project-body">
-                <div class="project-top">
-                  <h3>Interactive Community Hazard Map</h3>
-                </div>
-                <p class="muted">
-                  Geospatial map to view active hazard reports and submit new
-                  incidents through a server-action workflow.
-                </p>
-                <div class="tags">
-                  <span class="tag">React</span>
-                  <span class="tag">Next.js</span>
-                  <span class="tag">Maps</span>
-                </div>
-                <div class="project-actions">
-                  <a
-                    class="btn btn-sm"
-                    href="https://interactive-community-hazard-map.vercel.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Live demo
-                  </a>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="section section-alt">
-        <div class="container">
-          <header class="section-head section-head--center" style="text-align: center">
-            <div class="section-bg-text">04 / TALK</div>
-            <span class="section-label">Contact</span>
-            <h2>Let’s connect</h2>
-          </header>
-      
-          <div class="contact-grid">
-            <div class="card contact-panel reveal">
-              <div class="contact-photo">
-                <img
-                  src="./assets/photo.jpg"
-                  alt="Rue Martine Nicholson A. Abando"
-                  width="72"
-                  height="72"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <h3>Rue Martine Nicholson A. Abando</h3>
-              <p class="muted">Open to opportunities, collaborations, and questions.</p>
-              
-              <div class="contact-links">
-                <a class="contact-link-item" href="mailto:adrianorue790@gmail.com">
-                  <div class="icon-wrap">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                  </div>
-                  <div class="link-info">
-                    <span class="label">Email</span>
-                    <span class="value">adrianorue790@gmail.com</span>
-                  </div>
-                </a>
-                <a class="contact-link-item" href="tel:+639158361102">
-                  <div class="icon-wrap">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                  </div>
-                  <div class="link-info">
-                    <span class="label">Primary Phone</span>
-                    <span class="value">0915 836 1102</span>
-                  </div>
-                </a>
-                <a class="contact-link-item" href="tel:+639075358650">
-                  <div class="icon-wrap">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                  </div>
-                  <div class="link-info">
-                    <span class="label">Secondary Phone</span>
-                    <span class="value">0907 535 8650</span>
-                  </div>
-                </a>
-                <a class="contact-link-item" href="https://github.com/Nichoruson" target="_blank" rel="noreferrer">
-                  <div class="icon-wrap">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                  </div>
-                  <div class="link-info">
-                    <span class="label">GitHub</span>
-                    <span class="value">@Nichoruson</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-      
-            <div class="card contact-form-card reveal" style="--delay: 100ms">
-              <h3>Send a message</h3>
-              <p class="muted">Fill out the form below and I'll get back to you as soon as possible.</p>
-              
-              <form class="contact-form" action="https://formspree.io/f/adrianorue790@gmail.com" method="POST" id="portfolio-contact-form">
-                <div class="form-group">
-                  <input type="text" id="name" name="name" required placeholder=" " />
-                  <label for="name">Your Name</label>
-                </div>
-                <div class="form-group">
-                  <input type="email" id="email" name="email" required placeholder=" " />
-                  <label for="email">Email Address</label>
-                </div>
-                <div class="form-group">
-                  <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
-                  <label for="message">Message</label>
-                </div>
-                <button type="submit" class="btn btn-submit">
-                  <span>Send Message</span>
-                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <span class="muted">© <span id="year"></span> Rue Abando</span>
-        <a href="#top">Back to top ↑</a>
       </div>
-    </footer>
+    </section>
+  </main>
 
-    <script>
-      document.getElementById("year").textContent = String(new Date().getFullYear());
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="muted">© <span id="year"></span> Rue Abando</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
 
-      // ─── NAV ───────────────────────────────────────────
-      const nav = document.getElementById("site-nav");
-      const navToggle = document.querySelector(".nav-toggle");
+  <script>
+    document.getElementById("year").textContent = String(new Date().getFullYear());
 
-      function setMenuOpen(open) {
-        nav.classList.toggle("is-open", open);
-        navToggle.setAttribute("aria-expanded", String(open));
-        navToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
-        document.body.classList.toggle("nav-open", open);
-      }
+    // ─── NAV ───────────────────────────────────────────
+    const nav = document.getElementById("site-nav");
+    const navToggle = document.querySelector(".nav-toggle");
 
-      navToggle.addEventListener("click", () => setMenuOpen(!nav.classList.contains("is-open")));
-      nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => setMenuOpen(false)));
-      window.addEventListener("resize", () => { if (window.innerWidth > 768) setMenuOpen(false); }, { passive: true });
+    function setMenuOpen(open) {
+      nav.classList.toggle("is-open", open);
+      navToggle.setAttribute("aria-expanded", String(open));
+      navToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      document.body.classList.toggle("nav-open", open);
+    }
 
-      // ─── REDUCED MOTION CHECK ─────────────────────────
-      const prefersReduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    navToggle.addEventListener("click", () => setMenuOpen(!nav.classList.contains("is-open")));
+    nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => setMenuOpen(false)));
+    window.addEventListener("resize", () => { if (window.innerWidth > 768) setMenuOpen(false); }, { passive: true });
 
-      // ─── SCROLL REVEAL ────────────────────────────────
-      if (!prefersReduced) {
-        const io = new IntersectionObserver(
-          (entries) => {
-            for (const e of entries) {
-              if (e.isIntersecting) { e.target.classList.add("is-visible"); io.unobserve(e.target); }
-            }
-          },
-          { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
-        );
-        document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
-      } else {
-        document.querySelectorAll(".reveal").forEach((el) => el.classList.add("is-visible"));
-      }
+    // ─── REDUCED MOTION CHECK ─────────────────────────
+    const prefersReduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-      // ─── CUSTOM CURSOR ────────────────────────────────
-      if (!prefersReduced && window.innerWidth > 768) {
-        const dot = document.getElementById("cursor-dot");
-        const ring = document.getElementById("cursor-ring");
-        let mouseX = -200, mouseY = -200;
-        let ringX = -200, ringY = -200;
-        let trailTimer = null;
-
-        const interactables = "a, button, .btn, .card, .project, .contact-link-item, .scroll-mouse";
-
-        document.addEventListener("mousemove", (e) => {
-          mouseX = e.clientX;
-          mouseY = e.clientY;
-          dot.style.left = mouseX + "px";
-          dot.style.top = mouseY + "px";
-
-          // Spawn trail particle
-          if (!trailTimer) {
-            trailTimer = setTimeout(() => {
-              const t = document.createElement("div");
-              t.className = "cursor-trail";
-              t.style.left = mouseX + "px";
-              t.style.top = mouseY + "px";
-              t.style.background = Math.random() > 0.5 ? "var(--accent)" : "var(--accent2)";
-              document.body.appendChild(t);
-              setTimeout(() => t.remove(), 600);
-              trailTimer = null;
-            }, 30);
+    // ─── SCROLL REVEAL ────────────────────────────────
+    if (!prefersReduced) {
+      const io = new IntersectionObserver(
+        (entries) => {
+          for (const e of entries) {
+            if (e.isIntersecting) { e.target.classList.add("is-visible"); io.unobserve(e.target); }
           }
-        });
+        },
+        { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
+      );
+      document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+    } else {
+      document.querySelectorAll(".reveal").forEach((el) => el.classList.add("is-visible"));
+    }
 
-        // Smooth ring follow with lerp
-        function animateRing() {
-          ringX += (mouseX - ringX) * 0.1;
-          ringY += (mouseY - ringY) * 0.1;
-          ring.style.left = ringX + "px";
-          ring.style.top = ringY + "px";
-          requestAnimationFrame(animateRing);
+    // ─── CUSTOM CURSOR ────────────────────────────────
+    if (!prefersReduced && window.innerWidth > 768) {
+      const dot = document.getElementById("cursor-dot");
+      const ring = document.getElementById("cursor-ring");
+      let mouseX = -200, mouseY = -200;
+      let ringX = -200, ringY = -200;
+      let trailTimer = null;
+
+      const interactables = "a, button, .btn, .card, .project, .contact-link-item, .scroll-mouse";
+
+      document.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        dot.style.left = mouseX + "px";
+        dot.style.top = mouseY + "px";
+
+        // Spawn trail particle
+        if (!trailTimer) {
+          trailTimer = setTimeout(() => {
+            const t = document.createElement("div");
+            t.className = "cursor-trail";
+            t.style.left = mouseX + "px";
+            t.style.top = mouseY + "px";
+            t.style.background = Math.random() > 0.5 ? "var(--accent)" : "var(--accent2)";
+            document.body.appendChild(t);
+            setTimeout(() => t.remove(), 600);
+            trailTimer = null;
+          }, 30);
         }
-        animateRing();
-
-        document.querySelectorAll(interactables).forEach((el) => {
-          el.addEventListener("mouseenter", () => { dot.classList.add("is-hovering"); ring.classList.add("is-hovering"); });
-          el.addEventListener("mouseleave", () => { dot.classList.remove("is-hovering"); ring.classList.remove("is-hovering"); });
-        });
-
-        document.addEventListener("mousedown", () => { ring.classList.add("is-clicking"); });
-        document.addEventListener("mouseup", () => { ring.classList.remove("is-clicking"); });
-
-        document.addEventListener("mouseleave", () => { dot.style.opacity = "0"; ring.style.opacity = "0"; });
-        document.addEventListener("mouseenter", () => { dot.style.opacity = "1"; ring.style.opacity = "1"; });
-      }
-
-      // ─── CANVAS PARTICLES ─────────────────────────────
-      if (!prefersReduced) {
-        const canvas = document.getElementById("particles-canvas");
-        const ctx = canvas.getContext("2d");
-        let particles = [];
-        let animId;
-
-        function resize() {
-          canvas.width = window.innerWidth;
-          canvas.height = window.innerHeight;
-        }
-        resize();
-        window.addEventListener("resize", resize, { passive: true });
-
-        const COLORS = ["rgba(0,242,254,", "rgba(155,81,224,", "rgba(255,0,127,"];
-
-        function createParticle() {
-          return {
-            x: Math.random() * canvas.width,
-            y: Math.random() * canvas.height,
-            r: Math.random() * 1.8 + 0.4,
-            dx: (Math.random() - 0.5) * 0.35,
-            dy: (Math.random() - 0.5) * 0.35,
-            alpha: Math.random() * 0.5 + 0.15,
-            color: COLORS[Math.floor(Math.random() * COLORS.length)],
-            pulse: Math.random() * Math.PI * 2,
-            pulseSpeed: Math.random() * 0.02 + 0.008,
-          };
-        }
-
-        const COUNT = Math.min(80, Math.floor((window.innerWidth * window.innerHeight) / 15000));
-        for (let i = 0; i < COUNT; i++) particles.push(createParticle());
-
-        function drawParticles() {
-          ctx.clearRect(0, 0, canvas.width, canvas.height);
-          for (const p of particles) {
-            p.pulse += p.pulseSpeed;
-            const alpha = p.alpha * (0.7 + 0.3 * Math.sin(p.pulse));
-            ctx.beginPath();
-            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-            ctx.fillStyle = p.color + alpha + ")";
-            ctx.fill();
-
-            p.x += p.dx;
-            p.y += p.dy;
-
-            if (p.x < -10) p.x = canvas.width + 10;
-            if (p.x > canvas.width + 10) p.x = -10;
-            if (p.y < -10) p.y = canvas.height + 10;
-            if (p.y > canvas.height + 10) p.y = -10;
-          }
-
-          // Draw connecting lines between close particles
-          for (let i = 0; i < particles.length; i++) {
-            for (let j = i + 1; j < particles.length; j++) {
-              const dx = particles[i].x - particles[j].x;
-              const dy = particles[i].y - particles[j].y;
-              const dist = Math.sqrt(dx * dx + dy * dy);
-              if (dist < 110) {
-                const lineAlpha = (1 - dist / 110) * 0.12;
-                ctx.beginPath();
-                ctx.moveTo(particles[i].x, particles[i].y);
-                ctx.lineTo(particles[j].x, particles[j].y);
-                ctx.strokeStyle = "rgba(0,242,254," + lineAlpha + ")";
-                ctx.lineWidth = 0.5;
-                ctx.stroke();
-              }
-            }
-          }
-
-          animId = requestAnimationFrame(drawParticles);
-        }
-        drawParticles();
-      }
-
-      // ─── CONTACT FORM ─────────────────────────────────
-      const contactForm = document.getElementById("portfolio-contact-form");
-      if (contactForm) {
-        contactForm.addEventListener("submit", async (e) => {
-          e.preventDefault();
-          const form = e.target;
-          const button = form.querySelector(".btn-submit");
-          const buttonText = button.querySelector("span");
-          const originalText = buttonText.textContent;
-          button.disabled = true;
-          button.style.opacity = "0.8";
-          buttonText.textContent = "Sending...";
-          try {
-            const response = await fetch(form.action, {
-              method: form.method,
-              body: new FormData(form),
-              headers: { Accept: "application/json" },
-            });
-            if (response.ok) {
-              buttonText.textContent = "Message Sent!";
-              button.classList.add("success");
-              form.reset();
-              setTimeout(() => { button.disabled = false; button.style.opacity = "1"; button.classList.remove("success"); buttonText.textContent = originalText; }, 4000);
-            } else throw new Error("Failed");
-          } catch {
-            buttonText.textContent = "Error, try again!";
-            button.classList.add("error");
-            setTimeout(() => { button.disabled = false; button.style.opacity = "1"; button.classList.remove("error"); buttonText.textContent = originalText; }, 4000);
-          }
-        });
-      }
-
-      // ─── SCROLL PROGRESS ──────────────────────────────
-      window.addEventListener("scroll", () => {
-        const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
-        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrolled = (winScroll / height) * 100;
-        const progress = document.querySelector(".scroll-progress");
-        if (progress) progress.style.width = scrolled + "%";
-      }, { passive: true });
-
-      // ─── CARD MOUSE GLOW ──────────────────────────────
-      document.querySelectorAll(".card, .project").forEach((card) => {
-        card.addEventListener("mousemove", (e) => {
-          const rect = card.getBoundingClientRect();
-          card.style.setProperty("--mouse-x", `${e.clientX - rect.left}px`);
-          card.style.setProperty("--mouse-y", `${e.clientY - rect.top}px`);
-        });
       });
 
-      // ─── HERO PHOTO 3D TILT ───────────────────────────
-      if (!prefersReduced) {
-        const heroPhoto = document.getElementById("hero-photo");
-        if (heroPhoto) {
-          heroPhoto.closest(".hero-visual").addEventListener("mousemove", (e) => {
-            const rect = heroPhoto.getBoundingClientRect();
-            const cx = rect.left + rect.width / 2;
-            const cy = rect.top + rect.height / 2;
-            const dx = (e.clientX - cx) / (rect.width / 2);
-            const dy = (e.clientY - cy) / (rect.height / 2);
-            heroPhoto.style.transform = `perspective(600px) rotateY(${dx * 12}deg) rotateX(${-dy * 12}deg) scale(1.04)`;
-          });
-          heroPhoto.closest(".hero-visual").addEventListener("mouseleave", () => {
-            heroPhoto.style.transform = "";
-          });
-        }
+      // Smooth ring follow with lerp
+      function animateRing() {
+        ringX += (mouseX - ringX) * 0.1;
+        ringY += (mouseY - ringY) * 0.1;
+        ring.style.left = ringX + "px";
+        ring.style.top = ringY + "px";
+        requestAnimationFrame(animateRing);
+      }
+      animateRing();
+
+      document.querySelectorAll(interactables).forEach((el) => {
+        el.addEventListener("mouseenter", () => { dot.classList.add("is-hovering"); ring.classList.add("is-hovering"); });
+        el.addEventListener("mouseleave", () => { dot.classList.remove("is-hovering"); ring.classList.remove("is-hovering"); });
+      });
+
+      document.addEventListener("mousedown", () => { ring.classList.add("is-clicking"); });
+      document.addEventListener("mouseup", () => { ring.classList.remove("is-clicking"); });
+
+      document.addEventListener("mouseleave", () => { dot.style.opacity = "0"; ring.style.opacity = "0"; });
+      document.addEventListener("mouseenter", () => { dot.style.opacity = "1"; ring.style.opacity = "1"; });
+    }
+
+    // ─── CANVAS PARTICLES ─────────────────────────────
+    if (!prefersReduced) {
+      const canvas = document.getElementById("particles-canvas");
+      const ctx = canvas.getContext("2d");
+      let particles = [];
+      let animId;
+
+      function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+      resize();
+      window.addEventListener("resize", resize, { passive: true });
+
+      const COLORS = ["rgba(0,242,254,", "rgba(155,81,224,", "rgba(255,0,127,"];
+
+      function createParticle() {
+        return {
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          r: Math.random() * 1.8 + 0.4,
+          dx: (Math.random() - 0.5) * 0.35,
+          dy: (Math.random() - 0.5) * 0.35,
+          alpha: Math.random() * 0.5 + 0.15,
+          color: COLORS[Math.floor(Math.random() * COLORS.length)],
+          pulse: Math.random() * Math.PI * 2,
+          pulseSpeed: Math.random() * 0.02 + 0.008,
+        };
       }
 
-      // ─── MAGNETIC BUTTONS ─────────────────────────────
-      if (!prefersReduced && window.innerWidth > 768) {
-        document.querySelectorAll(".btn").forEach((btn) => {
-          btn.addEventListener("mousemove", (e) => {
-            const rect = btn.getBoundingClientRect();
-            const x = e.clientX - rect.left - rect.width / 2;
-            const y = e.clientY - rect.top - rect.height / 2;
-            btn.style.transform = `translate(${x * 0.18}px, ${y * 0.18}px)`;
+      const COUNT = Math.min(80, Math.floor((window.innerWidth * window.innerHeight) / 15000));
+      for (let i = 0; i < COUNT; i++) particles.push(createParticle());
+
+      function drawParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        for (const p of particles) {
+          p.pulse += p.pulseSpeed;
+          const alpha = p.alpha * (0.7 + 0.3 * Math.sin(p.pulse));
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = p.color + alpha + ")";
+          ctx.fill();
+
+          p.x += p.dx;
+          p.y += p.dy;
+
+          if (p.x < -10) p.x = canvas.width + 10;
+          if (p.x > canvas.width + 10) p.x = -10;
+          if (p.y < -10) p.y = canvas.height + 10;
+          if (p.y > canvas.height + 10) p.y = -10;
+        }
+
+        // Draw connecting lines between close particles
+        for (let i = 0; i < particles.length; i++) {
+          for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < 110) {
+              const lineAlpha = (1 - dist / 110) * 0.12;
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.strokeStyle = "rgba(0,242,254," + lineAlpha + ")";
+              ctx.lineWidth = 0.5;
+              ctx.stroke();
+            }
+          }
+        }
+
+        animId = requestAnimationFrame(drawParticles);
+      }
+      drawParticles();
+    }
+
+    // ─── CONTACT FORM ─────────────────────────────────
+    const contactForm = document.getElementById("portfolio-contact-form");
+    if (contactForm) {
+      contactForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const form = e.target;
+        const button = form.querySelector(".btn-submit");
+        const buttonText = button.querySelector("span");
+        const originalText = buttonText.textContent;
+        button.disabled = true;
+        button.style.opacity = "0.8";
+        buttonText.textContent = "Sending...";
+        try {
+          const response = await fetch(form.action, {
+            method: form.method,
+            body: new FormData(form),
+            headers: { Accept: "application/json" },
           });
-          btn.addEventListener("mouseleave", () => { btn.style.transform = ""; });
+          if (response.ok) {
+            buttonText.textContent = "Message Sent!";
+            button.classList.add("success");
+            form.reset();
+            setTimeout(() => { button.disabled = false; button.style.opacity = "1"; button.classList.remove("success"); buttonText.textContent = originalText; }, 4000);
+          } else throw new Error("Failed");
+        } catch {
+          buttonText.textContent = "Error, try again!";
+          button.classList.add("error");
+          setTimeout(() => { button.disabled = false; button.style.opacity = "1"; button.classList.remove("error"); buttonText.textContent = originalText; }, 4000);
+        }
+      });
+    }
+
+    // ─── SCROLL PROGRESS ──────────────────────────────
+    window.addEventListener("scroll", () => {
+      const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      const progress = document.querySelector(".scroll-progress");
+      if (progress) progress.style.width = scrolled + "%";
+    }, { passive: true });
+
+    // ─── CARD MOUSE GLOW ──────────────────────────────
+    document.querySelectorAll(".card, .project").forEach((card) => {
+      card.addEventListener("mousemove", (e) => {
+        const rect = card.getBoundingClientRect();
+        card.style.setProperty("--mouse-x", `${e.clientX - rect.left}px`);
+        card.style.setProperty("--mouse-y", `${e.clientY - rect.top}px`);
+      });
+    });
+
+    // ─── HERO PHOTO 3D TILT ───────────────────────────
+    if (!prefersReduced) {
+      const heroPhoto = document.getElementById("hero-photo");
+      if (heroPhoto) {
+        heroPhoto.closest(".hero-visual").addEventListener("mousemove", (e) => {
+          const rect = heroPhoto.getBoundingClientRect();
+          const cx = rect.left + rect.width / 2;
+          const cy = rect.top + rect.height / 2;
+          const dx = (e.clientX - cx) / (rect.width / 2);
+          const dy = (e.clientY - cy) / (rect.height / 2);
+          heroPhoto.style.transform = `perspective(600px) rotateY(${dx * 12}deg) rotateX(${-dy * 12}deg) scale(1.04)`;
+        });
+        heroPhoto.closest(".hero-visual").addEventListener("mouseleave", () => {
+          heroPhoto.style.transform = "";
         });
       }
+    }
 
-      // ─── TYPEWRITER ───────────────────────────────────
-      const phrases = ["Web Developer", "UI/UX Designer", "Problem Solver", "Frontend Engineer"];
-      let phraseIdx = 0, charIdx = 0, isDeleting = false;
-      const typedTextEl = document.querySelector(".typed-text");
+    // ─── MAGNETIC BUTTONS ─────────────────────────────
+    if (!prefersReduced && window.innerWidth > 768) {
+      document.querySelectorAll(".btn").forEach((btn) => {
+        btn.addEventListener("mousemove", (e) => {
+          const rect = btn.getBoundingClientRect();
+          const x = e.clientX - rect.left - rect.width / 2;
+          const y = e.clientY - rect.top - rect.height / 2;
+          btn.style.transform = `translate(${x * 0.18}px, ${y * 0.18}px)`;
+        });
+        btn.addEventListener("mouseleave", () => { btn.style.transform = ""; });
+      });
+    }
 
-      function typeText() {
-        if (!typedTextEl) return;
-        const currentPhrase = phrases[phraseIdx];
-        if (isDeleting) {
-          typedTextEl.textContent = currentPhrase.substring(0, charIdx - 1);
-          charIdx--;
-        } else {
-          typedTextEl.textContent = currentPhrase.substring(0, charIdx + 1);
-          charIdx++;
-        }
-        let typeSpeed = isDeleting ? 38 : 78;
-        if (!isDeleting && charIdx === currentPhrase.length) { typeSpeed = 2200; isDeleting = true; }
-        else if (isDeleting && charIdx === 0) { isDeleting = false; phraseIdx = (phraseIdx + 1) % phrases.length; typeSpeed = 380; }
-        setTimeout(typeText, typeSpeed);
+    // ─── TYPEWRITER ───────────────────────────────────
+    const phrases = ["Web Developer", "UI/UX Designer", "Problem Solver", "Frontend Engineer"];
+    let phraseIdx = 0, charIdx = 0, isDeleting = false;
+    const typedTextEl = document.querySelector(".typed-text");
+
+    function typeText() {
+      if (!typedTextEl) return;
+      const currentPhrase = phrases[phraseIdx];
+      if (isDeleting) {
+        typedTextEl.textContent = currentPhrase.substring(0, charIdx - 1);
+        charIdx--;
+      } else {
+        typedTextEl.textContent = currentPhrase.substring(0, charIdx + 1);
+        charIdx++;
       }
-      setTimeout(typeText, 1000);
-    </script>
-  </body>
+      let typeSpeed = isDeleting ? 38 : 78;
+      if (!isDeleting && charIdx === currentPhrase.length) { typeSpeed = 2200; isDeleting = true; }
+      else if (isDeleting && charIdx === 0) { isDeleting = false; phraseIdx = (phraseIdx + 1) % phrases.length; typeSpeed = 380; }
+      setTimeout(typeText, typeSpeed);
+    }
+    setTimeout(typeText, 1000);
+  </script>
+</body>
+
 </html>
