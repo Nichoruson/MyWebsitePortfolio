@@ -4,19 +4,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Rue Abando | Portfolio</title>
+  <title>Rue Abando | Web Developer Portfolio</title>
   <meta name="description"
-    content="Portfolio of Rue Martine Nicholson A. Abando — web developer, projects, and skills." />
-  <meta property="og:title" content="Rue Abando | Portfolio" />
+    content="Portfolio of Rue Martine Nicholson A. Abando — web developer crafting fast, beautiful, and accessible web experiences." />
+  <meta property="og:title" content="Rue Abando | Web Developer Portfolio" />
   <meta property="og:description" content="Web developer portfolio — projects, skills, and contact." />
   <meta property="og:image" content="./assets/photo.jpg" />
   <meta property="og:type" content="website" />
   <link rel="icon" href="./assets/photo.jpg" type="image/jpeg" />
   <link rel="apple-touch-icon" href="./assets/photo.jpg" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
     rel="stylesheet" />
+
   <link rel="stylesheet" href="./style.css" />
 </head>
 
@@ -28,24 +32,31 @@
   <!-- Particle canvas -->
   <canvas id="particles-canvas" aria-hidden="true"></canvas>
 
+  <!-- Scroll progress bar -->
   <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Aurora background blobs -->
   <div class="aurora-container" aria-hidden="true">
     <div class="aurora-blob aurora-blob--1"></div>
     <div class="aurora-blob aurora-blob--2"></div>
     <div class="aurora-blob aurora-blob--3"></div>
+    <div class="aurora-blob aurora-blob--4"></div>
   </div>
+
   <a class="skip-link" href="#main">Skip to content</a>
 
+  <!-- ─── HEADER ──────────────────────────────────────────── -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Go to top">
         <span class="brand-mark">
-          <img src="./assets/photo.jpg" alt="" width="36" height="36" decoding="async" />
+          <img src="./assets/photo.jpg" alt="" width="38" height="38" decoding="async" />
         </span>
         <span class="brand-text">Rue Abando</span>
       </a>
 
-      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav"
+        aria-label="Open menu">
         <span class="nav-toggle-bar" aria-hidden="true"></span>
         <span class="nav-toggle-bar" aria-hidden="true"></span>
         <span class="nav-toggle-bar" aria-hidden="true"></span>
@@ -61,19 +72,31 @@
   </header>
 
   <main id="main">
+
+    <!-- ─── HERO ──────────────────────────────────────────── -->
     <section id="top" class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="typed-text">Web Developer</span><span class="cursor"
-              aria-hidden="true">&nbsp;</span></p>
+
+          <!-- Available badge -->
+          <div class="hero-badge">
+            <span class="hero-badge-dot" aria-hidden="true"></span>
+            Available for work
+          </div>
+
+          <!-- Typewriter eyebrow -->
+          <p class="eyebrow">
+            <span class="typed-text">Web Developer</span><span class="cursor" aria-hidden="true">&nbsp;</span>
+          </p>
+
           <h1>
-            Building thoughtful web experiences
+            Building thoughtful web&nbsp;experiences
             <span class="accent" data-text="that feel fast, clear, and alive.">that feel fast, clear, and alive.</span>
           </h1>
+
           <p class="lead">
-            Hi, I’m <strong>Rue Martine Nicholson A. Abando</strong> — I
-            design and build responsive, highly interactive web applications
-            with polished user interfaces and clean, scalable code.
+            Hi, I'm <strong>Rue Martine Nicholson A. Abando</strong> — I design and build responsive,
+            highly interactive web applications with polished user interfaces and clean, scalable code.
           </p>
 
           <div class="hero-cta">
@@ -81,29 +104,53 @@
             <a class="btn btn-ghost" href="#contact">Get in touch</a>
           </div>
 
+          <!-- Tech stack chips -->
+          <div class="hero-stack">
+            <span class="hero-stack-label">Stack</span>
+            <span class="stack-chip">React</span>
+            <span class="stack-chip">Next.js</span>
+            <span class="stack-chip">CSS</span>
+            <span class="stack-chip">Python</span>
+            <span class="stack-chip">MySQL</span>
+            <span class="stack-chip">Figma</span>
+          </div>
+
           <div class="hero-meta">
             <div class="meta-card">
               <div class="meta-kicker">Focus</div>
               <div class="meta-value">Backend + Frontend &amp; UI</div>
             </div>
-            <a class="meta-card meta-card--link" href="https://github.com/Nichoruson" target="_blank" rel="noreferrer">
+            <a class="meta-card meta-card--link" href="https://github.com/Nichoruson" target="_blank"
+              rel="noreferrer">
               <div class="meta-kicker">GitHub</div>
               <div class="meta-value">@Nichoruson</div>
             </a>
           </div>
         </div>
 
+        <!-- Hero visual -->
         <div class="hero-visual">
           <div class="hero-glow" aria-hidden="true"></div>
-          <div class="hero-ring" aria-hidden="true"></div>
+
+          <!-- Spinning conic ring -->
+          <div class="hero-ring" aria-hidden="true">
+            <div class="hero-ring-inner-wrap"></div>
+          </div>
+
           <div class="hero-ring-inner" aria-hidden="true"></div>
+
+          <!-- Orbit dots -->
           <div class="hero-orbit-dot hero-orbit-dot--1" aria-hidden="true"></div>
           <div class="hero-orbit-dot hero-orbit-dot--2" aria-hidden="true"></div>
           <div class="hero-orbit-dot hero-orbit-dot--3" aria-hidden="true"></div>
+
+          <!-- Photo -->
           <div class="hero-photo" id="hero-photo">
-            <img src="./assets/photo.jpg" alt="Rue Martine Nicholson A. Abando" width="220" height="220" loading="eager"
-              fetchpriority="high" decoding="async" />
+            <img src="./assets/photo.jpg" alt="Rue Martine Nicholson A. Abando" width="230" height="230"
+              loading="eager" fetchpriority="high" decoding="async" />
           </div>
+
+          <!-- Floating stat chips -->
           <div class="hero-stats" aria-hidden="true">
             <div class="stat-chip">
               <strong>6</strong>
@@ -116,6 +163,8 @@
           </div>
         </div>
       </div>
+
+      <!-- Scroll indicator -->
       <div class="scroll-down-indicator" aria-hidden="true">
         <a href="#about" class="scroll-mouse" aria-label="Scroll down">
           <span class="mouse-wheel"></span>
@@ -123,6 +172,33 @@
       </div>
     </section>
 
+    <!-- ─── MARQUEE TICKER ───────────────────────────────── -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <!-- Two sets for seamless loop -->
+        <div class="marquee-item"><span class="marquee-dot"></span><span>React</span> · Components &amp; Hooks</div>
+        <div class="marquee-item"><span class="marquee-dot"></span><span>Next.js</span> · App Router</div>
+        <div class="marquee-item"><span class="marquee-dot"></span><span>CSS</span> · Animation &amp; Layout</div>
+        <div class="marquee-item"><span class="marquee-dot"></span><span>Python</span> · Scripting</div>
+        <div class="marquee-item"><span class="marquee-dot"></span><span>MySQL</span> · Database Design</div>
+        <div class="marquee-item"><span class="marquee-dot"></span><span>Figma</span> · UI Prototyping</div>
+        <div class="marquee-item"><span class="marquee-dot"></span><span>Java</span> · OOP</div>
+        <div class="marquee-item"><span class="marquee-dot"></span><span>PHP</span> · Backend Logic</div>
+        <div class="marquee-item"><span class="marquee-dot"></span><span>Git</span> · Version Control</div>
+        <!-- Duplicate for infinite loop -->
+        <div class="marquee-item"><span class="marquee-dot"></span><span>React</span> · Components &amp; Hooks</div>
+        <div class="marquee-item"><span class="marquee-dot"></span><span>Next.js</span> · App Router</div>
+        <div class="marquee-item"><span class="marquee-dot"></span><span>CSS</span> · Animation &amp; Layout</div>
+        <div class="marquee-item"><span class="marquee-dot"></span><span>Python</span> · Scripting</div>
+        <div class="marquee-item"><span class="marquee-dot"></span><span>MySQL</span> · Database Design</div>
+        <div class="marquee-item"><span class="marquee-dot"></span><span>Figma</span> · UI Prototyping</div>
+        <div class="marquee-item"><span class="marquee-dot"></span><span>Java</span> · OOP</div>
+        <div class="marquee-item"><span class="marquee-dot"></span><span>PHP</span> · Backend Logic</div>
+        <div class="marquee-item"><span class="marquee-dot"></span><span>Git</span> · Version Control</div>
+      </div>
+    </div>
+
+    <!-- ─── ABOUT ──────────────────────────────────────────── -->
     <section id="about" class="section">
       <div class="container">
         <header class="section-head">
@@ -132,6 +208,7 @@
         </header>
 
         <div class="about-grid">
+          <!-- Profile card -->
           <div class="card about-profile reveal">
             <div class="about-photo">
               <img src="./assets/photo.jpg" alt="Rue Martine Nicholson A. Abando" width="120" height="120"
@@ -140,13 +217,14 @@
             <div class="about-profile-copy">
               <h3>Rue Martine Nicholson A. Abando</h3>
               <p>
-                I’m a web developer dedicated to
-                engineering polished, accessible web experiences
-                designed around real user needs.
+                I'm a web developer dedicated to engineering polished, accessible web experiences
+                designed around real user needs. I love turning complex problems into clean,
+                intuitive interfaces.
               </p>
             </div>
           </div>
 
+          <!-- What I do -->
           <div class="card reveal" style="--delay: 80ms">
             <h3>What I do</h3>
             <p>
@@ -160,6 +238,7 @@
             </ul>
           </div>
 
+          <!-- What I value -->
           <div class="card reveal" style="--delay: 160ms">
             <h3>What I value</h3>
             <p>
@@ -170,13 +249,34 @@
               <span class="tag">UX Engineering</span>
               <span class="tag">Accessibility (A11y)</span>
               <span class="tag">Clean Code</span>
-              <span class="tag">Performance Optimization</span>
+              <span class="tag">Performance</span>
+            </div>
+          </div>
+
+          <!-- Fun fact stats row -->
+          <div class="fun-facts reveal" style="--delay: 240ms">
+            <div class="fun-fact-card">
+              <div class="fun-fact-num">6+</div>
+              <span class="fun-fact-label">Live projects</span>
+            </div>
+            <div class="fun-fact-card">
+              <div class="fun-fact-num">9+</div>
+              <span class="fun-fact-label">Skills mastered</span>
+            </div>
+            <div class="fun-fact-card">
+              <div class="fun-fact-num">3+</div>
+              <span class="fun-fact-label">Years learning</span>
+            </div>
+            <div class="fun-fact-card">
+              <div class="fun-fact-num">∞</div>
+              <span class="fun-fact-label">Cups of coffee</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ─── SKILLS ────────────────────────────────────────── -->
     <section id="tools" class="section section-alt">
       <div class="container">
         <header class="section-head">
@@ -187,15 +287,16 @@
 
         <div class="skills-categories">
 
-          <!-- Category 1: Frontend -->
+          <!-- Frontend Core -->
           <div class="skills-category-panel reveal">
             <h3 class="category-title"><span class="accent-dot"></span>Frontend Core</h3>
             <div class="skills-list">
+
               <article class="card skill-card">
                 <header class="card-row">
                   <div class="skill-title">
-                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
-                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <polyline points="16 18 22 12 16 6" />
                       <polyline points="8 6 2 12 8 18" />
                       <line x1="14" y1="4" x2="10" y2="20" />
@@ -204,17 +305,15 @@
                   </div>
                   <span class="pill">Advanced</span>
                 </header>
-                <div class="meter" role="img" aria-label="HTML skill 90%">
-                  <span style="--w: 90%"></span>
-                </div>
+                <div class="meter" role="img" aria-label="HTML skill 90%"><span style="--w: 90%"></span></div>
                 <p class="muted">Semantic markup and accessible structure.</p>
               </article>
 
               <article class="card skill-card">
                 <header class="card-row">
                   <div class="skill-title">
-                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
-                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path
                         d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
                       <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
@@ -224,17 +323,15 @@
                   </div>
                   <span class="pill">Advanced</span>
                 </header>
-                <div class="meter" role="img" aria-label="CSS skill 85%">
-                  <span style="--w: 85%"></span>
-                </div>
+                <div class="meter" role="img" aria-label="CSS skill 85%"><span style="--w: 85%"></span></div>
                 <p class="muted">Layout, animation, and polished styling.</p>
               </article>
 
               <article class="card skill-card">
                 <header class="card-row">
                   <div class="skill-title">
-                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
-                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(0 12 12)" />
                       <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)" />
                       <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)" />
@@ -242,44 +339,42 @@
                     </svg>
                     <h3>React</h3>
                   </div>
-                  <span class="pill pill--blue">Intermediate</span>
+                  <span class="pill pill--violet">Intermediate</span>
                 </header>
-                <div class="meter" role="img" aria-label="React skill 70%">
-                  <span style="--w: 70%"></span>
-                </div>
+                <div class="meter" role="img" aria-label="React skill 70%"><span style="--w: 70%"></span></div>
                 <p class="muted">Components, hooks, and interactive UIs.</p>
               </article>
 
               <article class="card skill-card">
                 <header class="card-row">
                   <div class="skill-title">
-                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
-                      stroke-width="2" stroke-linecap="round">
+                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round">
                       <circle cx="12" cy="12" r="10" />
                       <path d="M8 16V8l8 9.5" />
                       <path d="M16 8v5" />
                     </svg>
                     <h3>Next.js</h3>
                   </div>
-                  <span class="pill pill--blue">Intermediate</span>
+                  <span class="pill pill--violet">Intermediate</span>
                 </header>
-                <div class="meter" role="img" aria-label="Next.js skill 70%">
-                  <span style="--w: 70%"></span>
-                </div>
+                <div class="meter" role="img" aria-label="Next.js skill 70%"><span style="--w: 70%"></span></div>
                 <p class="muted">Routing, server actions, deployment.</p>
               </article>
+
             </div>
           </div>
 
-          <!-- Category 2: Backend -->
+          <!-- Backend Systems -->
           <div class="skills-category-panel reveal" style="--delay: 100ms">
             <h3 class="category-title"><span class="accent-dot"></span>Backend Systems</h3>
             <div class="skills-list">
+
               <article class="card skill-card">
                 <header class="card-row">
                   <div class="skill-title">
-                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
-                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
                       <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
                       <line x1="6" y1="2" x2="6" y2="5" />
@@ -288,19 +383,17 @@
                     </svg>
                     <h3>Java</h3>
                   </div>
-                  <span class="pill pill--blue">Intermediate</span>
+                  <span class="pill pill--violet">Intermediate</span>
                 </header>
-                <div class="meter" role="img" aria-label="Java skill 65%">
-                  <span style="--w: 65%"></span>
-                </div>
+                <div class="meter" role="img" aria-label="Java skill 65%"><span style="--w: 65%"></span></div>
                 <p class="muted">OOP fundamentals and small projects.</p>
               </article>
 
               <article class="card skill-card">
                 <header class="card-row">
                   <div class="skill-title">
-                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
-                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path
                         d="M12 2H9a5 5 0 0 0-5 5v3a5 5 0 0 0 5 5h3a1 1 0 0 1 1 1v2a3 3 0 0 1-3 3H7a1 1 0 0 0 0 2h3a5 5 0 0 0 5-5v-3a5 5 0 0 0-5-5H7a1 1 0 0 1-1-1V7a3 3 0 0 1 3-3h3a1 1 0 0 0 0-2z" />
                       <circle cx="9" cy="6" r="1" fill="currentColor" />
@@ -308,44 +401,42 @@
                     </svg>
                     <h3>Python</h3>
                   </div>
-                  <span class="pill pill--blue">Intermediate</span>
+                  <span class="pill pill--violet">Intermediate</span>
                 </header>
-                <div class="meter" role="img" aria-label="Python skill 60%">
-                  <span style="--w: 60%"></span>
-                </div>
+                <div class="meter" role="img" aria-label="Python skill 60%"><span style="--w: 60%"></span></div>
                 <p class="muted">Scripting and problem solving.</p>
               </article>
 
               <article class="card skill-card">
                 <header class="card-row">
                   <div class="skill-title">
-                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
-                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <ellipse cx="12" cy="5" rx="9" ry="3" />
                       <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
                       <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3" />
                     </svg>
                     <h3>MySQL / XAMPP</h3>
                   </div>
-                  <span class="pill pill--blue">Intermediate</span>
+                  <span class="pill pill--violet">Intermediate</span>
                 </header>
-                <div class="meter" role="img" aria-label="MySQL skill 60%">
-                  <span style="--w: 60%"></span>
-                </div>
+                <div class="meter" role="img" aria-label="MySQL skill 60%"><span style="--w: 60%"></span></div>
                 <p class="muted">Databases and local dev setup.</p>
               </article>
+
             </div>
           </div>
 
-          <!-- Category 3: Design -->
+          <!-- Design & Tools -->
           <div class="skills-category-panel reveal" style="--delay: 200ms">
             <h3 class="category-title"><span class="accent-dot"></span>Design &amp; Tools</h3>
             <div class="skills-list">
+
               <article class="card skill-card">
                 <header class="card-row">
                   <div class="skill-title">
-                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
-                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z" />
                       <path d="M12 2h3.5a3.5 3.5 0 1 1-3.5 3.5V2z" />
                       <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z" />
@@ -354,32 +445,46 @@
                     </svg>
                     <h3>Figma</h3>
                   </div>
-                  <span class="pill pill--blue">Intermediate</span>
+                  <span class="pill pill--violet">Intermediate</span>
                 </header>
-                <div class="meter" role="img" aria-label="Figma skill 70%">
-                  <span style="--w: 70%"></span>
-                </div>
+                <div class="meter" role="img" aria-label="Figma skill 70%"><span style="--w: 70%"></span></div>
                 <p class="muted">Wireframes, components, and UI mockups.</p>
               </article>
 
               <article class="card skill-card">
                 <header class="card-row">
                   <div class="skill-title">
-                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
-                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
                       <circle cx="8.5" cy="8.5" r="1.5" />
                       <polyline points="21 15 16 10 5 21" />
                     </svg>
                     <h3>Canva / Adobe</h3>
                   </div>
-                  <span class="pill pill--blue">Intermediate</span>
+                  <span class="pill pill--violet">Intermediate</span>
                 </header>
-                <div class="meter" role="img" aria-label="Design tools skill 70%">
-                  <span style="--w: 70%"></span>
-                </div>
+                <div class="meter" role="img" aria-label="Design tools skill 70%"><span
+                    style="--w: 70%"></span></div>
                 <p class="muted">Graphics, assets, and visual polish.</p>
               </article>
+
+              <article class="card skill-card">
+                <header class="card-row">
+                  <div class="skill-title">
+                    <svg class="skill-icon" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                    </svg>
+                    <h3>Git / GitHub</h3>
+                  </div>
+                  <span class="pill">Advanced</span>
+                </header>
+                <div class="meter" role="img" aria-label="Git skill 80%"><span style="--w: 80%"></span></div>
+                <p class="muted">Version control and collaborative workflows.</p>
+              </article>
+
             </div>
           </div>
 
@@ -387,6 +492,7 @@
       </div>
     </section>
 
+    <!-- ─── PROJECTS ──────────────────────────────────────── -->
     <section id="projects" class="section">
       <div class="container">
         <header class="section-head">
@@ -396,6 +502,7 @@
         </header>
 
         <div class="projects-grid">
+
           <article class="project project--violet reveal">
             <div class="browser-mockup">
               <div class="browser-header">
@@ -406,10 +513,10 @@
                 </div>
                 <div class="browser-address">flow-sync-weld.vercel.app</div>
               </div>
-              <a class="project-preview" href="https://flow-sync-weld.vercel.app/" target="_blank" rel="noreferrer"
-                aria-label="Open FlowSync Collaborative Workspace">
-                <iframe src="https://flow-sync-weld.vercel.app/" title="Preview: FlowSync Collaborative Workspace"
-                  loading="lazy" tabindex="-1"></iframe>
+              <a class="project-preview" href="https://flow-sync-weld.vercel.app/" target="_blank"
+                rel="noreferrer" aria-label="Open FlowSync Collaborative Workspace">
+                <iframe src="https://flow-sync-weld.vercel.app/"
+                  title="Preview: FlowSync Collaborative Workspace" loading="lazy" tabindex="-1"></iframe>
                 <span class="project-preview-badge">Open live site →</span>
               </a>
             </div>
@@ -419,7 +526,8 @@
                 <span class="pill">Featured</span>
               </div>
               <p class="muted">
-                Web-based collaborative workspace and real-time project boards platform, featuring dynamic task workflows, instant sync, and role-based board permissions.
+                Web-based collaborative workspace and real-time project boards platform, featuring dynamic
+                task workflows, instant sync, and role-based board permissions.
               </p>
               <div class="tags">
                 <span class="tag">Web App</span>
@@ -428,9 +536,8 @@
                 <span class="tag">Collaborative</span>
               </div>
               <div class="project-actions">
-                <a class="btn btn-sm" href="https://flow-sync-weld.vercel.app/" target="_blank" rel="noreferrer">
-                  Live demo
-                </a>
+                <a class="btn btn-sm" href="https://flow-sync-weld.vercel.app/" target="_blank"
+                  rel="noreferrer">Live demo</a>
               </div>
             </div>
           </article>
@@ -445,8 +552,8 @@
                 </div>
                 <div class="browser-address">tabang-daet.vercel.app</div>
               </div>
-              <a class="project-preview" href="https://tabang-daet.vercel.app/" target="_blank" rel="noreferrer"
-                aria-label="Open Tabang Daet Emergency System">
+              <a class="project-preview" href="https://tabang-daet.vercel.app/" target="_blank"
+                rel="noreferrer" aria-label="Open Tabang Daet Emergency System">
                 <iframe src="https://tabang-daet.vercel.app/" title="Preview: Tabang Daet Emergency System"
                   loading="lazy" tabindex="-1"></iframe>
                 <span class="project-preview-badge">Open live site →</span>
@@ -458,8 +565,8 @@
                 <span class="pill">Featured</span>
               </div>
               <p class="muted">
-                Web-based emergency reporting and navigation system designed to quickly connect users with critical
-                assistance and coordinate crisis response efforts.
+                Web-based emergency reporting and navigation system designed to quickly connect users
+                with critical assistance and coordinate crisis response efforts.
               </p>
               <div class="tags">
                 <span class="tag">Web App</span>
@@ -467,9 +574,8 @@
                 <span class="tag">Emergency System</span>
               </div>
               <div class="project-actions">
-                <a class="btn btn-sm" href="https://tabang-daet.vercel.app/" target="_blank" rel="noreferrer">
-                  Live demo
-                </a>
+                <a class="btn btn-sm" href="https://tabang-daet.vercel.app/" target="_blank"
+                  rel="noreferrer">Live demo</a>
               </div>
             </div>
           </article>
@@ -485,19 +591,19 @@
                 <div class="browser-address">wackys.great-site.net</div>
               </div>
               <a class="project-preview" href="https://wackys.great-site.net/dashboard.php" target="_blank"
-                rel="noreferrer" aria-label="Open Wacky's Eat & Drink">
-                <iframe src="https://wackys.great-site.net/dashboard.php" title="Preview: Wacky's Eat & Drink"
-                  loading="lazy" tabindex="-1"></iframe>
+                rel="noreferrer" aria-label="Open Wacky's Eat &amp; Drink">
+                <iframe src="https://wackys.great-site.net/dashboard.php"
+                  title="Preview: Wacky's Eat &amp; Drink" loading="lazy" tabindex="-1"></iframe>
                 <span class="project-preview-badge">Open live site →</span>
               </a>
             </div>
             <div class="project-body">
               <div class="project-top">
-                <h3>Wacky's Eat & Drink</h3>
+                <h3>Wacky's Eat &amp; Drink</h3>
               </div>
               <p class="muted">
-                An online food ordering and event booking platform for restaurant customers, featuring category
-                browsing, cart checkout, and reservation tools.
+                An online food ordering and event booking platform for restaurant customers, featuring
+                category browsing, cart checkout, and reservation tools.
               </p>
               <div class="tags">
                 <span class="tag">Web App</span>
@@ -506,9 +612,7 @@
               </div>
               <div class="project-actions">
                 <a class="btn btn-sm" href="https://wackys.great-site.net/dashboard.php" target="_blank"
-                  rel="noreferrer">
-                  Live demo
-                </a>
+                  rel="noreferrer">Live demo</a>
               </div>
             </div>
           </article>
@@ -523,8 +627,8 @@
                 </div>
                 <div class="browser-address">rabies-shield-daet.infinityfree.me</div>
               </div>
-              <a class="project-preview" href="https://rabies-shield-daet.infinityfree.me/login.php" target="_blank"
-                rel="noreferrer" aria-label="Open ABC Connect (Animal Bite Center)">
+              <a class="project-preview" href="https://rabies-shield-daet.infinityfree.me/login.php"
+                target="_blank" rel="noreferrer" aria-label="Open ABC Connect (Animal Bite Center)">
                 <iframe src="https://rabies-shield-daet.infinityfree.me/login.php"
                   title="Preview: ABC Connect (Animal Bite Center)" loading="lazy" tabindex="-1"></iframe>
                 <span class="project-preview-badge">Open live site →</span>
@@ -535,8 +639,8 @@
                 <h3>ABC Connect</h3>
               </div>
               <p class="muted">
-                Animal Bite Center management system for the Daet Municipal Health Office, offering secure patient
-                registration, tracking, and admin dashboards.
+                Animal Bite Center management system for the Daet Municipal Health Office, offering
+                secure patient registration, tracking, and admin dashboards.
               </p>
               <div class="tags">
                 <span class="tag">Web App</span>
@@ -544,10 +648,8 @@
                 <span class="tag">PHP / MySQL</span>
               </div>
               <div class="project-actions">
-                <a class="btn btn-sm" href="https://rabies-shield-daet.infinityfree.me/login.php" target="_blank"
-                  rel="noreferrer">
-                  Live demo
-                </a>
+                <a class="btn btn-sm" href="https://rabies-shield-daet.infinityfree.me/login.php"
+                  target="_blank" rel="noreferrer">Live demo</a>
               </div>
             </div>
           </article>
@@ -560,10 +662,11 @@
                   <span class="dot yellow"></span>
                   <span class="dot green"></span>
                 </div>
-                <div class="browser-address">onehealth-referral.production</div>
+                <div class="browser-address">onehealth-referral.up.railway.app</div>
               </div>
-              <a class="project-preview" href="https://onehealth-referral-production-c481.up.railway.app/login"
-                target="_blank" rel="noreferrer" aria-label="Open OneHealth Referral System">
+              <a class="project-preview"
+                href="https://onehealth-referral-production-c481.up.railway.app/login" target="_blank"
+                rel="noreferrer" aria-label="Open OneHealth Referral System">
                 <iframe src="https://onehealth-referral-production-c481.up.railway.app/login"
                   title="Preview: OneHealth Referral System" loading="lazy" tabindex="-1"></iframe>
                 <span class="project-preview-badge">Open live site →</span>
@@ -574,8 +677,7 @@
                 <h3>OneHealth Referral System</h3>
               </div>
               <p class="muted">
-                Health referral web app with secure login and role-based
-                access for healthcare workflows.
+                Health referral web app with secure login and role-based access for healthcare workflows.
               </p>
               <div class="tags">
                 <span class="tag">Web App</span>
@@ -584,9 +686,7 @@
               </div>
               <div class="project-actions">
                 <a class="btn btn-sm" href="https://onehealth-referral-production-c481.up.railway.app/login"
-                  target="_blank" rel="noreferrer">
-                  Live demo
-                </a>
+                  target="_blank" rel="noreferrer">Live demo</a>
               </div>
             </div>
           </article>
@@ -599,10 +699,10 @@
                   <span class="dot yellow"></span>
                   <span class="dot green"></span>
                 </div>
-                <div class="browser-address">hazard-map.vercel.app</div>
+                <div class="browser-address">interactive-community-hazard-map.vercel.app</div>
               </div>
-              <a class="project-preview" href="https://interactive-community-hazard-map.vercel.app/" target="_blank"
-                rel="noreferrer" aria-label="Open Interactive Community Hazard Map">
+              <a class="project-preview" href="https://interactive-community-hazard-map.vercel.app/"
+                target="_blank" rel="noreferrer" aria-label="Open Interactive Community Hazard Map">
                 <iframe src="https://interactive-community-hazard-map.vercel.app/"
                   title="Preview: Interactive Community Hazard Map" loading="lazy" tabindex="-1"></iframe>
                 <span class="project-preview-badge">Open live site →</span>
@@ -610,11 +710,11 @@
             </div>
             <div class="project-body">
               <div class="project-top">
-                <h3>Interactive Community Hazard Map</h3>
+                <h3>Community Hazard Map</h3>
               </div>
               <p class="muted">
-                Geospatial map to view active hazard reports and submit new
-                incidents through a server-action workflow.
+                Geospatial map to view active hazard reports and submit new incidents through
+                a server-action workflow.
               </p>
               <div class="tags">
                 <span class="tag">React</span>
@@ -622,30 +722,31 @@
                 <span class="tag">Maps</span>
               </div>
               <div class="project-actions">
-                <a class="btn btn-sm" href="https://interactive-community-hazard-map.vercel.app/" target="_blank"
-                  rel="noreferrer">
-                  Live demo
-                </a>
+                <a class="btn btn-sm" href="https://interactive-community-hazard-map.vercel.app/"
+                  target="_blank" rel="noreferrer">Live demo</a>
               </div>
             </div>
           </article>
+
         </div>
       </div>
     </section>
 
+    <!-- ─── CONTACT ───────────────────────────────────────── -->
     <section id="contact" class="section section-alt">
       <div class="container">
-        <header class="section-head section-head--center" style="text-align: center">
+        <header class="section-head section-head--center">
           <div class="section-bg-text">04 / TALK</div>
           <span class="section-label">Contact</span>
-          <h2>Let’s connect</h2>
+          <h2>Let's connect</h2>
         </header>
 
         <div class="contact-grid">
+          <!-- Contact info panel -->
           <div class="card contact-panel reveal">
             <div class="contact-photo">
-              <img src="./assets/photo.jpg" alt="Rue Martine Nicholson A. Abando" width="72" height="72" loading="lazy"
-                decoding="async" />
+              <img src="./assets/photo.jpg" alt="Rue Martine Nicholson A. Abando" width="78" height="78"
+                loading="lazy" decoding="async" />
             </div>
             <h3>Rue Martine Nicholson A. Abando</h3>
             <p class="muted">Open to opportunities, collaborations, and questions.</p>
@@ -653,8 +754,8 @@
             <div class="contact-links">
               <a class="contact-link-item" href="mailto:adrianorue790@gmail.com">
                 <div class="icon-wrap">
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                     <polyline points="22,6 12,13 2,6" />
                   </svg>
@@ -664,10 +765,11 @@
                   <span class="value">adrianorue790@gmail.com</span>
                 </div>
               </a>
+
               <a class="contact-link-item" href="tel:+639158361102">
                 <div class="icon-wrap">
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path
                       d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                   </svg>
@@ -677,10 +779,11 @@
                   <span class="value">0915 836 1102</span>
                 </div>
               </a>
+
               <a class="contact-link-item" href="tel:+639075358650">
                 <div class="icon-wrap">
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path
                       d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                   </svg>
@@ -690,10 +793,12 @@
                   <span class="value">0907 535 8650</span>
                 </div>
               </a>
-              <a class="contact-link-item" href="https://github.com/Nichoruson" target="_blank" rel="noreferrer">
+
+              <a class="contact-link-item" href="https://github.com/Nichoruson" target="_blank"
+                rel="noreferrer">
                 <div class="icon-wrap">
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path
                       d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                   </svg>
@@ -706,6 +811,7 @@
             </div>
           </div>
 
+          <!-- Contact form -->
           <div class="card contact-form-card reveal" style="--delay: 100ms">
             <h3>Send a message</h3>
             <p class="muted">Fill out the form below and I'll get back to you as soon as possible.</p>
@@ -726,8 +832,8 @@
               </div>
               <button type="submit" class="btn btn-submit">
                 <span>Send Message</span>
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
-                  stroke-linecap="round" stroke-linejoin="round">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <line x1="22" y1="2" x2="11" y2="13" />
                   <polygon points="22 2 15 22 11 13 2 9 22 2" />
                 </svg>
@@ -737,11 +843,16 @@
         </div>
       </div>
     </section>
+
   </main>
 
+  <!-- ─── FOOTER ────────────────────────────────────────── -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <span class="muted">© <span id="year"></span> Rue Abando</span>
+      <div class="footer-brand">
+        <span class="footer-gradient-text">Rue Abando</span>
+        <span class="muted">— © <span id="year"></span></span>
+      </div>
       <a href="#top">Back to top ↑</a>
     </div>
   </footer>
@@ -749,7 +860,7 @@
   <script>
     document.getElementById("year").textContent = String(new Date().getFullYear());
 
-    // ─── NAV ───────────────────────────────────────────
+    // ─── NAV ─────────────────────────────────────────────
     const nav = document.getElementById("site-nav");
     const navToggle = document.querySelector(".nav-toggle");
 
@@ -761,13 +872,13 @@
     }
 
     navToggle.addEventListener("click", () => setMenuOpen(!nav.classList.contains("is-open")));
-    nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => setMenuOpen(false)));
+    nav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => setMenuOpen(false)));
     window.addEventListener("resize", () => { if (window.innerWidth > 768) setMenuOpen(false); }, { passive: true });
 
-    // ─── REDUCED MOTION CHECK ─────────────────────────
+    // ─── REDUCED MOTION ──────────────────────────────────
     const prefersReduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    // ─── SCROLL REVEAL ────────────────────────────────
+    // ─── SCROLL REVEAL ───────────────────────────────────
     if (!prefersReduced) {
       const io = new IntersectionObserver(
         (entries) => {
@@ -775,14 +886,22 @@
             if (e.isIntersecting) { e.target.classList.add("is-visible"); io.unobserve(e.target); }
           }
         },
-        { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
+        { threshold: 0.08, rootMargin: "0px 0px -36px 0px" }
       );
-      document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+      document.querySelectorAll(".reveal").forEach(el => io.observe(el));
     } else {
-      document.querySelectorAll(".reveal").forEach((el) => el.classList.add("is-visible"));
+      document.querySelectorAll(".reveal").forEach(el => el.classList.add("is-visible"));
     }
 
-    // ─── CUSTOM CURSOR ────────────────────────────────
+    // ─── HEADER SCROLL STYLE ─────────────────────────────
+    const header = document.querySelector(".site-header");
+    window.addEventListener("scroll", () => {
+      header.style.background = window.scrollY > 20
+        ? "rgba(4,6,15,0.88)"
+        : "rgba(4,6,15,0.7)";
+    }, { passive: true });
+
+    // ─── CUSTOM CURSOR ───────────────────────────────────
     if (!prefersReduced && window.innerWidth > 768) {
       const dot = document.getElementById("cursor-dot");
       const ring = document.getElementById("cursor-ring");
@@ -790,7 +909,7 @@
       let ringX = -200, ringY = -200;
       let trailTimer = null;
 
-      const interactables = "a, button, .btn, .card, .project, .contact-link-item, .scroll-mouse";
+      const interactables = "a, button, .btn, .card, .project, .contact-link-item, .scroll-mouse, .stack-chip, .fun-fact-card";
 
       document.addEventListener("mousemove", (e) => {
         mouseX = e.clientX;
@@ -798,22 +917,20 @@
         dot.style.left = mouseX + "px";
         dot.style.top = mouseY + "px";
 
-        // Spawn trail particle
         if (!trailTimer) {
           trailTimer = setTimeout(() => {
             const t = document.createElement("div");
             t.className = "cursor-trail";
             t.style.left = mouseX + "px";
             t.style.top = mouseY + "px";
-            t.style.background = Math.random() > 0.5 ? "var(--accent)" : "var(--accent2)";
+            t.style.background = Math.random() > 0.5 ? "var(--cyan)" : "var(--violet)";
             document.body.appendChild(t);
             setTimeout(() => t.remove(), 600);
             trailTimer = null;
-          }, 30);
+          }, 35);
         }
       });
 
-      // Smooth ring follow with lerp
       function animateRing() {
         ringX += (mouseX - ringX) * 0.1;
         ringY += (mouseY - ringY) * 0.1;
@@ -823,24 +940,22 @@
       }
       animateRing();
 
-      document.querySelectorAll(interactables).forEach((el) => {
+      document.querySelectorAll(interactables).forEach(el => {
         el.addEventListener("mouseenter", () => { dot.classList.add("is-hovering"); ring.classList.add("is-hovering"); });
         el.addEventListener("mouseleave", () => { dot.classList.remove("is-hovering"); ring.classList.remove("is-hovering"); });
       });
 
-      document.addEventListener("mousedown", () => { ring.classList.add("is-clicking"); });
-      document.addEventListener("mouseup", () => { ring.classList.remove("is-clicking"); });
-
+      document.addEventListener("mousedown", () => ring.classList.add("is-clicking"));
+      document.addEventListener("mouseup", () => ring.classList.remove("is-clicking"));
       document.addEventListener("mouseleave", () => { dot.style.opacity = "0"; ring.style.opacity = "0"; });
       document.addEventListener("mouseenter", () => { dot.style.opacity = "1"; ring.style.opacity = "1"; });
     }
 
-    // ─── CANVAS PARTICLES ─────────────────────────────
+    // ─── CANVAS PARTICLES ────────────────────────────────
     if (!prefersReduced) {
       const canvas = document.getElementById("particles-canvas");
       const ctx = canvas.getContext("2d");
       let particles = [];
-      let animId;
 
       function resize() {
         canvas.width = window.innerWidth;
@@ -849,68 +964,66 @@
       resize();
       window.addEventListener("resize", resize, { passive: true });
 
-      const COLORS = ["rgba(0,242,254,", "rgba(155,81,224,", "rgba(255,0,127,"];
+      const COLORS = ["rgba(0,229,255,", "rgba(168,85,247,", "rgba(240,171,252,"];
 
       function createParticle() {
         return {
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
-          r: Math.random() * 1.8 + 0.4,
-          dx: (Math.random() - 0.5) * 0.35,
-          dy: (Math.random() - 0.5) * 0.35,
-          alpha: Math.random() * 0.5 + 0.15,
+          r: Math.random() * 1.8 + 0.3,
+          dx: (Math.random() - 0.5) * 0.3,
+          dy: (Math.random() - 0.5) * 0.3,
+          alpha: Math.random() * 0.5 + 0.1,
           color: COLORS[Math.floor(Math.random() * COLORS.length)],
           pulse: Math.random() * Math.PI * 2,
-          pulseSpeed: Math.random() * 0.02 + 0.008,
+          pulseSpeed: Math.random() * 0.018 + 0.006,
         };
       }
 
-      const COUNT = Math.min(80, Math.floor((window.innerWidth * window.innerHeight) / 15000));
+      const COUNT = Math.min(90, Math.floor((window.innerWidth * window.innerHeight) / 13000));
       for (let i = 0; i < COUNT; i++) particles.push(createParticle());
 
       function drawParticles() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
+
         for (const p of particles) {
           p.pulse += p.pulseSpeed;
-          const alpha = p.alpha * (0.7 + 0.3 * Math.sin(p.pulse));
+          const alpha = p.alpha * (0.65 + 0.35 * Math.sin(p.pulse));
           ctx.beginPath();
           ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
           ctx.fillStyle = p.color + alpha + ")";
           ctx.fill();
-
           p.x += p.dx;
           p.y += p.dy;
-
           if (p.x < -10) p.x = canvas.width + 10;
           if (p.x > canvas.width + 10) p.x = -10;
           if (p.y < -10) p.y = canvas.height + 10;
           if (p.y > canvas.height + 10) p.y = -10;
         }
 
-        // Draw connecting lines between close particles
+        // Connecting lines
         for (let i = 0; i < particles.length; i++) {
           for (let j = i + 1; j < particles.length; j++) {
             const dx = particles[i].x - particles[j].x;
             const dy = particles[i].y - particles[j].y;
             const dist = Math.sqrt(dx * dx + dy * dy);
-            if (dist < 110) {
-              const lineAlpha = (1 - dist / 110) * 0.12;
+            if (dist < 120) {
+              const lineAlpha = (1 - dist / 120) * 0.1;
               ctx.beginPath();
               ctx.moveTo(particles[i].x, particles[i].y);
               ctx.lineTo(particles[j].x, particles[j].y);
-              ctx.strokeStyle = "rgba(0,242,254," + lineAlpha + ")";
-              ctx.lineWidth = 0.5;
+              ctx.strokeStyle = "rgba(0,229,255," + lineAlpha + ")";
+              ctx.lineWidth = 0.4;
               ctx.stroke();
             }
           }
         }
-
-        animId = requestAnimationFrame(drawParticles);
+        requestAnimationFrame(drawParticles);
       }
       drawParticles();
     }
 
-    // ─── CONTACT FORM ─────────────────────────────────
+    // ─── CONTACT FORM ────────────────────────────────────
     const contactForm = document.getElementById("portfolio-contact-form");
     if (contactForm) {
       contactForm.addEventListener("submit", async (e) => {
@@ -921,7 +1034,7 @@
         const originalText = buttonText.textContent;
         button.disabled = true;
         button.style.opacity = "0.8";
-        buttonText.textContent = "Sending...";
+        buttonText.textContent = "Sending…";
         try {
           const response = await fetch(form.action, {
             method: form.method,
@@ -929,20 +1042,30 @@
             headers: { Accept: "application/json" },
           });
           if (response.ok) {
-            buttonText.textContent = "Message Sent!";
+            buttonText.textContent = "Message Sent! ✓";
             button.classList.add("success");
             form.reset();
-            setTimeout(() => { button.disabled = false; button.style.opacity = "1"; button.classList.remove("success"); buttonText.textContent = originalText; }, 4000);
+            setTimeout(() => {
+              button.disabled = false;
+              button.style.opacity = "1";
+              button.classList.remove("success");
+              buttonText.textContent = originalText;
+            }, 4500);
           } else throw new Error("Failed");
         } catch {
-          buttonText.textContent = "Error, try again!";
+          buttonText.textContent = "Error — try again";
           button.classList.add("error");
-          setTimeout(() => { button.disabled = false; button.style.opacity = "1"; button.classList.remove("error"); buttonText.textContent = originalText; }, 4000);
+          setTimeout(() => {
+            button.disabled = false;
+            button.style.opacity = "1";
+            button.classList.remove("error");
+            buttonText.textContent = originalText;
+          }, 4000);
         }
       });
     }
 
-    // ─── SCROLL PROGRESS ──────────────────────────────
+    // ─── SCROLL PROGRESS ─────────────────────────────────
     window.addEventListener("scroll", () => {
       const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
       const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -951,8 +1074,8 @@
       if (progress) progress.style.width = scrolled + "%";
     }, { passive: true });
 
-    // ─── CARD MOUSE GLOW ──────────────────────────────
-    document.querySelectorAll(".card, .project").forEach((card) => {
+    // ─── CARD MOUSE GLOW ─────────────────────────────────
+    document.querySelectorAll(".card, .project").forEach(card => {
       card.addEventListener("mousemove", (e) => {
         const rect = card.getBoundingClientRect();
         card.style.setProperty("--mouse-x", `${e.clientX - rect.left}px`);
@@ -960,39 +1083,40 @@
       });
     });
 
-    // ─── HERO PHOTO 3D TILT ───────────────────────────
+    // ─── HERO PHOTO 3D TILT ──────────────────────────────
     if (!prefersReduced) {
       const heroPhoto = document.getElementById("hero-photo");
       if (heroPhoto) {
-        heroPhoto.closest(".hero-visual").addEventListener("mousemove", (e) => {
+        const visual = heroPhoto.closest(".hero-visual");
+        visual.addEventListener("mousemove", (e) => {
           const rect = heroPhoto.getBoundingClientRect();
           const cx = rect.left + rect.width / 2;
           const cy = rect.top + rect.height / 2;
           const dx = (e.clientX - cx) / (rect.width / 2);
           const dy = (e.clientY - cy) / (rect.height / 2);
-          heroPhoto.style.transform = `perspective(600px) rotateY(${dx * 12}deg) rotateX(${-dy * 12}deg) scale(1.04)`;
+          heroPhoto.style.transform = `perspective(700px) rotateY(${dx * 14}deg) rotateX(${-dy * 14}deg) scale(1.05)`;
         });
-        heroPhoto.closest(".hero-visual").addEventListener("mouseleave", () => {
+        visual.addEventListener("mouseleave", () => {
           heroPhoto.style.transform = "";
         });
       }
     }
 
-    // ─── MAGNETIC BUTTONS ─────────────────────────────
+    // ─── MAGNETIC BUTTONS ────────────────────────────────
     if (!prefersReduced && window.innerWidth > 768) {
-      document.querySelectorAll(".btn").forEach((btn) => {
+      document.querySelectorAll(".btn").forEach(btn => {
         btn.addEventListener("mousemove", (e) => {
           const rect = btn.getBoundingClientRect();
           const x = e.clientX - rect.left - rect.width / 2;
           const y = e.clientY - rect.top - rect.height / 2;
-          btn.style.transform = `translate(${x * 0.18}px, ${y * 0.18}px)`;
+          btn.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
         });
         btn.addEventListener("mouseleave", () => { btn.style.transform = ""; });
       });
     }
 
-    // ─── TYPEWRITER ───────────────────────────────────
-    const phrases = ["Web Developer", "UI/UX Designer", "Problem Solver", "Frontend Engineer"];
+    // ─── TYPEWRITER ──────────────────────────────────────
+    const phrases = ["Web Developer", "UI/UX Designer", "Problem Solver", "Frontend Engineer", "Creative Builder"];
     let phraseIdx = 0, charIdx = 0, isDeleting = false;
     const typedTextEl = document.querySelector(".typed-text");
 
@@ -1006,12 +1130,23 @@
         typedTextEl.textContent = currentPhrase.substring(0, charIdx + 1);
         charIdx++;
       }
-      let typeSpeed = isDeleting ? 38 : 78;
-      if (!isDeleting && charIdx === currentPhrase.length) { typeSpeed = 2200; isDeleting = true; }
-      else if (isDeleting && charIdx === 0) { isDeleting = false; phraseIdx = (phraseIdx + 1) % phrases.length; typeSpeed = 380; }
+      let typeSpeed = isDeleting ? 36 : 72;
+      if (!isDeleting && charIdx === currentPhrase.length) { typeSpeed = 2400; isDeleting = true; }
+      else if (isDeleting && charIdx === 0) { isDeleting = false; phraseIdx = (phraseIdx + 1) % phrases.length; typeSpeed = 420; }
       setTimeout(typeText, typeSpeed);
     }
-    setTimeout(typeText, 1000);
+    setTimeout(typeText, 1200);
+
+    // ─── STACK CHIPS HOVER TILT ──────────────────────────
+    document.querySelectorAll(".stack-chip").forEach(chip => {
+      chip.addEventListener("mousemove", (e) => {
+        const rect = chip.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width - 0.5) * 12;
+        const y = ((e.clientY - rect.top) / rect.height - 0.5) * 12;
+        chip.style.transform = `perspective(400px) rotateX(${-y}deg) rotateY(${x}deg) translateY(-2px)`;
+      });
+      chip.addEventListener("mouseleave", () => { chip.style.transform = ""; });
+    });
   </script>
 </body>
 
