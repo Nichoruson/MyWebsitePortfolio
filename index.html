@@ -67,6 +67,21 @@
         <a href="#tools">Skills</a>
         <a href="#projects">Projects</a>
         <a class="btn btn-sm nav-contact" href="#contact">Contact</a>
+
+        <!-- Theme toggle -->
+        <button
+          type="button"
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Toggle light / dark mode"
+          aria-pressed="false"
+        >
+          <div class="theme-toggle-track">
+            <span class="theme-toggle-icon theme-toggle-icon--moon" aria-hidden="true">🌙</span>
+            <span class="theme-toggle-icon theme-toggle-icon--sun"  aria-hidden="true">☀️</span>
+          </div>
+          <span class="theme-toggle-thumb" aria-hidden="true"></span>
+        </button>
       </nav>
     </div>
   </header>
@@ -895,11 +910,48 @@
 
     // ─── HEADER SCROLL STYLE ─────────────────────────────
     const header = document.querySelector(".site-header");
-    window.addEventListener("scroll", () => {
-      header.style.background = window.scrollY > 20
-        ? "rgba(4,6,15,0.88)"
-        : "rgba(4,6,15,0.7)";
-    }, { passive: true });
+    function updateHeaderBg() {
+      const isLight = document.body.classList.contains("light-mode");
+      if (window.scrollY > 20) {
+        header.style.background = isLight ? "rgba(240,244,255,0.95)" : "rgba(4,6,15,0.88)";
+      } else {
+        header.style.background = "";
+      }
+    }
+    window.addEventListener("scroll", updateHeaderBg, { passive: true });
+
+    // ─── THEME TOGGLE ────────────────────────────────────
+    const themeToggle = document.getElementById("theme-toggle");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
+    const savedTheme  = localStorage.getItem("portfolio-theme");
+
+    function applyTheme(mode) {
+      const isLight = mode === "light";
+      document.body.classList.toggle("light-mode", isLight);
+      themeToggle.setAttribute("aria-pressed", String(isLight));
+      localStorage.setItem("portfolio-theme", isLight ? "light" : "dark");
+      updateHeaderBg();
+    }
+
+    // Initialise from saved preference or system preference
+    if (savedTheme) {
+      applyTheme(savedTheme);
+    } else if (!prefersDark.matches) {
+      // System is light — start in light mode
+      applyTheme("light");
+    }
+
+    themeToggle.addEventListener("click", () => {
+      const isLight = document.body.classList.contains("light-mode");
+      applyTheme(isLight ? "dark" : "light");
+    });
+
+    // Listen for system preference changes
+    prefersDark.addEventListener("change", (e) => {
+      if (!localStorage.getItem("portfolio-theme")) {
+        applyTheme(e.matches ? "dark" : "light");
+      }
+    });
 
     // ─── CUSTOM CURSOR ───────────────────────────────────
     if (!prefersReduced && window.innerWidth > 768) {
